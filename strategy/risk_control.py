@@ -1,6 +1,6 @@
 import logging
 import time
-from binance_api import Binance
+from clients.binance_api import Binance
 from config.logger import setup_logger
 from config.config import API_KEY , API_SECRET , MIN_ASSET
 

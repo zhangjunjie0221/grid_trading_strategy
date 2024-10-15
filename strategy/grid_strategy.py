@@ -1,7 +1,7 @@
 import pickle
 import time
 import redis
-from binance_api import Binance
+from clients.binance_api import Binance
 from config.config import STEP , ORDERS , REDIS_CONFIG ,API_KEY ,API_SECRET , TradingPair 
 from config.mongodb import Database 
 from config.logger import setup_logger
@@ -11,12 +11,18 @@ class Strategy:
     def __init__(self):
         self.pairs = TradingPair.USDCUSDT
         self.step = STEP
-        self.redis_client = redis.Redis(REDIS_CONFIG)
+        self.redis_client = redis.Redis(host=REDIS_CONFIG['host'], port=REDIS_CONFIG['port'], db=REDIS_CONFIG['db'],password=REDIS_CONFIG['password'])
         self.api_client = Binance(API_KEY, API_SECRET)
         self.orders = ORDERS
         self.logger = setup_logger('Strategy', 'Strategy.log')
         self.database = Database()    
 
+    
+    def close(self):
+        '''关闭数据库'''
+        if self.database:
+            self.database.mongo_client.close()
+    
 
     def create_maker_order(self, pair, amount, price, order_type='BUY'):
         '''创建订单'''
@@ -45,11 +51,15 @@ class Strategy:
     def get_market_prices(self):
         '''获取市场深度数据'''
         while True:
-            message = self.redis_client.brpop('b-depth', timeout=0)[1]
-            data = pickle.loads(message)
-            bids = data['data']['bids']
-            asks = data['data']['asks']
-            yield bids, asks
+            message = self.redis_client.brpop('b-depth', timeout=5) #设置超时
+            if message:
+                data = pickle.loads(message[1])
+                market_data = data['data'][0] 
+                bids = market_data['bids']
+                asks = market_data['asks']
+                yield bids, asks
+            else:
+                break
 
 
     def first_create_orders(self):
@@ -137,4 +147,6 @@ class Strategy:
 
         except Exception as e:
             self.logger.error(f"逻辑交易过程中发生错误: {e}")
+        finally:
+            self.close()  #确保在结束时关闭连接
 
