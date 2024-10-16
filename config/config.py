@@ -36,8 +36,8 @@ MONGO_CONFIG = {
 }
 
 # 账户密钥
-API_KEY = "your_api_key"
-API_SECRET = "your_api_secret"
+API_KEY = "t3ImE9ybf6s7tE4QkZ6zwWwdCGAstM9FVn2ucfPOugHizsK29Zqi1QYHov34xcOy"
+API_SECRET = "G6ZEkeVQsGjK1WY49ARSbev0kkob4VSRkD2r75zOibPF5mRP2YEMo1VhxiToHbYJ"
 
 
 proxies = {

@@ -36,7 +36,7 @@ class RiskControl:
                     print("由于资产低于设定值，停止交易。")
                     self.stop_trading()
                     break
-                time.sleep(0.1)
+                time.sleep(1)
             except Exception as e:
                 self.logger.error(f"监控资产时发生错误: {e}")
 

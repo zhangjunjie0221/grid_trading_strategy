@@ -29,14 +29,13 @@ class Binance():
         return data 
     
 
-    def create_order(self, symbol, side, quantity, price=None, order_type='LIMIT_MAKER', time_in_force='GTC'):
+    def create_order(self, symbol, side, quantity, price=None, order_type='LIMIT_MAKER', ):
         '''创建maker订单'''
         endpoint = "/api/v3/order"  
         params = {
             'symbol': symbol,  
             'side': side,  #'BUY'或'SELL'
             'type': order_type,  
-            'timeInForce': time_in_force,
             'quantity': quantity,  
         }
 
@@ -140,12 +139,6 @@ class Binance():
                 elif method == 'DELETE':  
                     response = requests.delete(f"{self.base_url}{endpoint}", headers=headers, params=params, proxies=proxies)
 
-                #请求异常处理
-                if response.status_code != 200:
-                    logging.error(f"请求失败，状态码为: {response.status_code}, 响应内容: {response.text}")
-                    time.sleep(delay)
-                    continue
-                    
                 return response.json()
             except requests.exceptions.RequestException as e:
                 logging.error(f"请求 {method} {endpoint} 时发生错误: {e}")

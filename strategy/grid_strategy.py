@@ -20,8 +20,7 @@ class Strategy:
     
     def close(self):
         '''关闭数据库'''
-        if self.database:
-            self.database.mongo_client.close()
+        self.database.mongo_client.close()
     
 
     def create_maker_order(self, pair, amount, price, order_type='BUY'):
