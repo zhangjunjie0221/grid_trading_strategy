@@ -20,24 +20,90 @@ def main():
 
     #测试获取订单状态
     try:
-        status = binance.get_order_status(symbol='USDCUSDT', order_id=657216412)
+        status = binance.get_order_status(symbol='USDCUSDT', order_id=658491128)
         print("订单状态:", status)
     except Exception as e:
         print("获取订单状态失败:", e,status)
 
     # 测试取消订单
     try:
-        cancellation_result = binance.cancel_order(symbol='USDCUSDT', order_id=657216412)
+        cancellation_result = binance.cancel_order(symbol='USDCUSDT', order_id=658491128)
         print("取消订单结果:", cancellation_result)
     except Exception as e:
         print("取消订单失败:", e)
 
-    # 测试获取未成交订单
     try:
-        open_orders = binance.get_open_orders(symbol='USDCUSDT')
-        print("未成交订单:", open_orders)
+        status = binance.get_order_status(symbol='USDCUSDT', order_id=658491130)
+        print("订单状态:", status)
     except Exception as e:
-        print("获取未成交订单失败:", e)
+        print("获取订单状态失败:", e,status)
+
+    # 测试取消订单
+    try:
+        cancellation_result = binance.cancel_order(symbol='USDCUSDT', order_id=658491130)
+        print("取消订单结果:", cancellation_result)
+    except Exception as e:
+        print("取消订单失败:", e)
+
+    try:
+        status = binance.get_order_status(symbol='USDCUSDT', order_id=658491137)
+        print("订单状态:", status)
+    except Exception as e:
+        print("获取订单状态失败:", e,status)
+
+    # 测试取消订单
+    try:
+        cancellation_result = binance.cancel_order(symbol='USDCUSDT', order_id=658491137)
+        print("取消订单结果:", cancellation_result)
+    except Exception as e:
+        print("取消订单失败:", e)
+
+    try:
+        status = binance.get_order_status(symbol='USDCUSDT', order_id=658491143)
+        print("订单状态:", status)
+    except Exception as e:
+        print("获取订单状态失败:", e,status)
+
+    # 测试取消订单
+    try:
+        cancellation_result = binance.cancel_order(symbol='USDCUSDT', order_id=658491143)
+        print("取消订单结果:", cancellation_result)
+    except Exception as e:
+        print("取消订单失败:", e)
+
+    try:
+        status = binance.get_order_status(symbol='USDCUSDT', order_id=658491150)
+        print("订单状态:", status)
+    except Exception as e:
+        print("获取订单状态失败:", e,status)
+
+    # 测试取消订单
+    try:
+        cancellation_result = binance.cancel_order(symbol='USDCUSDT', order_id=658491150)
+        print("取消订单结果:", cancellation_result)
+    except Exception as e:
+        print("取消订单失败:", e)
+
+    try:
+        status = binance.get_order_status(symbol='USDCUSDT', order_id=658491154)
+        print("订单状态:", status)
+    except Exception as e:
+        print("获取订单状态失败:", e,status)
+
+    # 测试取消订单
+    try:
+        cancellation_result = binance.cancel_order(symbol='USDCUSDT', order_id=658491154)
+        print("取消订单结果:", cancellation_result)
+    except Exception as e:
+        print("取消订单失败:", e)
+
+   
+    # # 测试获取未成交订单
+    # try:
+    #     open_orders = binance.get_open_orders(symbol='USDCUSDT')
+    #     print("未成交订单:", open_orders)
+    # except Exception as e:
+    #     print("获取未成交订单失败:", e)
 
 if __name__ == "__main__":
     main()

@@ -29,7 +29,7 @@ class Binance():
         return data 
     
 
-    def create_order(self, symbol, side, quantity, price=None, order_type='LIMIT_MAKER', ):
+    def create_order(self, symbol, side, quantity, price=None, order_type='LIMIT_MAKER'):
         '''创建maker订单'''
         endpoint = "/api/v3/order"  
         params = {
@@ -45,12 +45,12 @@ class Binance():
         try:
             response = self.request(endpoint, params=params, method='POST')
             if 'code' in response:
-                logging.error(f"创建订单失败: {response['msg']}")
+                self.logger.error(f"创建订单失败: {response['msg']}")
             else:
-                logging.info(f'创建订单完成, 订单号为:{response['orderId']}')
+                self.logger.info(f'创建订单完成, 订单号为:{response['orderId']}')
                 return response['orderId']  # 返回订单 ID
         except Exception as e:
-            logging.error(f"创建订单过程中发生错误: {e}")
+            self.logger.error(f"创建订单过程中发生错误: {e}")
 
 
     def get_order_status(self, symbol, order_id):
@@ -64,7 +64,7 @@ class Binance():
         try:
             response = self.request(endpoint, params=params)
         
-            logging.info(f"获取订单状态成功，参数: {params}")
+            self.logger.info(f"获取订单状态成功，参数: {params}")
             
             #提取策略类里面所需的字段
             status = response['status']
@@ -82,7 +82,7 @@ class Binance():
             }
 
         except Exception as e:
-            logging.error(f"查询订单状态时发生错误:{e},参数: {params}")
+            self.logger.error(f"查询订单状态时发生错误:{e},参数: {params}")
 
 
     def cancel_order(self, symbol, order_id):
@@ -95,12 +95,12 @@ class Binance():
         try:
             response = self.request(endpoint, params=params, method='DELETE')
             if 'code' in response:
-                logging.error(f"取消订单失败: {response['msg']}")
+                self.logger.error(f"取消订单失败: {response['msg']}")
             else:
-                logging.info(f"订单{order_id}已成功取消。")
+                self.logger.info(f"订单{order_id}已成功取消。")
                 return response
         except Exception as e:
-            logging.error(f"取消订单过程中发生错误: {e}")
+            self.logger.error(f"取消订单过程中发生错误: {e}")
 
 
     def get_open_orders(self, symbol):
@@ -114,7 +114,7 @@ class Binance():
             response = self.request(endpoint, params=params)
             return response
         except Exception as e:
-            logging.error(f"获取未成交订单时发生错误: {e}")
+            self.logger.error(f"获取未成交订单时发生错误: {e}")
             return []
         
 
@@ -141,5 +141,5 @@ class Binance():
 
                 return response.json()
             except requests.exceptions.RequestException as e:
-                logging.error(f"请求 {method} {endpoint} 时发生错误: {e}")
+                self.logger.error(f"请求 {method} {endpoint} 时发生错误: {e}")
                 time.sleep(delay)

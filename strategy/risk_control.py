@@ -2,13 +2,16 @@ import logging
 import time
 from clients.binance_api import Binance
 from config.logger import setup_logger
-from config.config import API_KEY , API_SECRET , MIN_ASSET
+from config.config import API_KEY , API_SECRET , MIN_ASSET , TradingPair
+from config.mongodb import Database
 
 class RiskControl:
     def __init__(self):
         self.binance = Binance(API_KEY, API_SECRET)
         self.min_asset = MIN_ASSET
+        self.symbol = TradingPair.USDCUSDT.value
         self.logger = setup_logger('RiskControl', 'RiskControl.log')
+        self.database = Database()
 
 
     def get_total_asset(self):
@@ -17,7 +20,9 @@ class RiskControl:
             account_info = self.binance.get_account()
             usdc = next((float(item['free']) for item in account_info['balances'] if item['asset'] == 'USDC'), 0.0)
             usdt = next((float(item['free']) for item in account_info['balances'] if item['asset'] == 'USDT'), 0.0)
-            total_asset_value = usdc + usdt
+            open_orders = self.binance.get_open_orders(self.symbol)
+            total_value_of_open_orders = sum(float(order['origQty']) * float(order['price']) for order in open_orders)
+            total_asset_value = usdc + usdt + total_value_of_open_orders
             self.logger.info(f"当前资产总值: {total_asset_value}")
             return total_asset_value
         except Exception as e:
@@ -51,9 +56,10 @@ class RiskControl:
     def cancel_all_orders(self):
         '''调用api方法取消订单'''
         try:
-            orders = self.binance.get_open_orders(symbol='USDCUSDT')
+            orders = self.binance.get_open_orders(self.symbol)
             for order in orders:
                 self.binance.cancel_order(order['symbol'], order['orderId'])
+                self.database.remove_order_id(order)
                 self.logger.info(f"订单 {order['orderId']} 已取消。")
         except Exception as e:
             self.logger.error(f"取消未成交订单时发生错误: {e}")

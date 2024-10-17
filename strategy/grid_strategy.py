@@ -9,7 +9,7 @@ from config.logger import setup_logger
 
 class Strategy:
     def __init__(self):
-        self.pairs = TradingPair.USDCUSDT
+        self.pairs = TradingPair.USDCUSDT.value
         self.step = STEP
         self.redis_client = redis.Redis(host=REDIS_CONFIG['host'], port=REDIS_CONFIG['port'], db=REDIS_CONFIG['db'],password=REDIS_CONFIG['password'])
         self.api_client = Binance(API_KEY, API_SECRET)
@@ -39,7 +39,7 @@ class Strategy:
     def check_order_status(self, order_id):
         '''检查订单状态'''
         try:
-            status = self.api_client.get_order_status(order_id)
+            status = self.api_client.get_order_status(self.pairs,order_id)
             self.logger.info(f"订单 {order_id} 状态: {status['status']}")
             return status
         except Exception as e:
@@ -64,15 +64,25 @@ class Strategy:
     def first_create_orders(self):
         '''初始化订单'''
         for price, amount in self.orders.items():
-            order_type = 'BUY' 
+            order_type = 'BUY'
 
-            #当第一次交易的时候 如果价格大于一的话 说明都是需要在元价格的基础上减去一个间隔价格去买 然后 后面再在原价格上去卖
+            # 当第一次交易的时候 如果价格大于 1 的话
             if price > 1:
-                asset_num = round(amount / (price - self.step), 5) 
-            
-            #如果小于1的话 说明按网格规定的价格买 卖的时候需要加一个价格间隔去卖
-            asset_num = round(amount / price, 5)
-            self.create_maker_order(self.pairs ,price, asset_num, order_type)
+                asset_num = int(round(amount / (price - self.step), 5))
+            else:
+                # 如果小于 1 的话
+                asset_num = int(round(amount / price, 5))
+
+            # 尝试创建订单，直到成功
+            success = False
+            while not success:
+                try:
+                    self.create_maker_order(self.pairs, asset_num, price, order_type)
+                    success = True  # 如果创建成功，设置成功状态
+                    print(f"成功创建订单: 价格: {price}, 数量: {asset_num}")
+                except Exception as e:
+                    print(f"创建订单失败: {e}，正在重新尝试...")
+                    time.sleep(1)  # 等待 1 秒后重新尝试
 
 
 
@@ -82,10 +92,10 @@ class Strategy:
         
         try:
             for bid_price, ask_price in self.get_market_prices():
-                print(f"当前 Bid: {bid_price}, Ask: {ask_price}")
 
                 #获取遍历当前订单的信息状态
                 for order_id in self.database.get_all_order_ids():
+                    print(order_id)
                     data = self.check_order_status(order_id)
                     status = data['status'] #订单完成状态
                     filled_amount = data['filled_amount'] #订单成交数量
@@ -97,7 +107,7 @@ class Strategy:
                         print(f"买入订单 {order_id} 已完成")
                         #再提升价格卖单
                         take_profit_price = average_fill_price + self.step
-                        sell_amount = filled_amount
+                        sell_amount = int(filled_amount)
                         self.create_maker_order(self.pairs, sell_amount, take_profit_price, order_type='SELL')
                         self.database.remove_order_id(order_id)
 
@@ -127,14 +137,14 @@ class Strategy:
                                 for price, quantity in self.orders.items():
                                     if price == bid_price:
                                         buy_price = bid_price
-                                        buy_amount = round(quantity / price, 5)
+                                        buy_amount = int(round(quantity / price, 5))
 
                         #如果当前的市场价的买入价格 大于等于 之前的买入订单的价格 则选择下 价格为之前的买入订单的价格和对应的数量 
                         buy_price = average_fill_price - self.step
                         #判断要下单的价格是否在我们规定的网格内 如果在则可以赋值 
                         for price, quantity in self.orders.items():
                             if price == (average_fill_price - self.step):
-                                buy_amount = round(quantity / price, 5)
+                                buy_amount = int(round(quantity / price, 5))
                         
                         self.create_maker_order(self.pairs , buy_amount, buy_price , order_type='BUY')
                         self.database.remove_order_id(order_id)

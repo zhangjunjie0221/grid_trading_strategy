@@ -35,6 +35,29 @@ def test_mongo_connection_and_functions():
         print("Removing order ID:", test_order_id)
         db.remove_order_id(test_order_id)
 
+        #测试删除
+        print("Removing order ID:", 658491128)
+        db.remove_order_id(658491128)
+
+        #测试删除
+        print("Removing order ID:", 658491130)
+        db.remove_order_id(658491130)
+
+        #测试删除
+        print("Removing order ID:", 658491137)
+        db.remove_order_id(658491137)
+
+        #测试删除
+        print("Removing order ID:", 658491143)
+        db.remove_order_id(658491143)
+
+        #测试删除
+        print("Removing order ID:", 658491150)
+        db.remove_order_id(658491150)
+
+        #测试删除
+        print("Removing order ID:", 658491154)
+        db.remove_order_id(658491154)
 
         # 再次获取所有订单 ID
         all_order_ids_after_removal = db.get_all_order_ids()
