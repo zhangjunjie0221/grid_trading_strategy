@@ -27,7 +27,7 @@ class RiskControl:
             return total_asset_value
         except Exception as e:
             self.logger.error(f"获取总资产时发生错误: {e}")
-            return 0
+            return None
 
 
     def monitor_assets(self):
@@ -35,6 +35,12 @@ class RiskControl:
         while True:
             try:
                 total_asset = self.get_total_asset()
+
+                if total_asset is None:  
+                    self.logger.error("无法获取总资产，停止交易。")
+                    print("由于无法获取总资产，停止交易。")
+                    self.stop_trading()
+                    break
 
                 if total_asset < self.min_asset:
                     self.logger.warning(f'当前的资产总值为：{total_asset}，低于设定的最小风控值。')

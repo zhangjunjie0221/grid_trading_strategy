@@ -1,613 +1,76 @@
-2024-10-17 18:53:18,248 - INFO - 创建订单完成, 订单号为:658491128
-2024-10-17 18:53:18,248 - INFO - 创建订单完成, 订单号为:658491128
-2024-10-17 18:53:18,564 - INFO - 创建订单完成, 订单号为:658491130
-2024-10-17 18:53:18,564 - INFO - 创建订单完成, 订单号为:658491130
-2024-10-17 18:53:18,823 - INFO - 创建订单完成, 订单号为:658491137
-2024-10-17 18:53:18,823 - INFO - 创建订单完成, 订单号为:658491137
-2024-10-17 18:53:19,077 - INFO - 创建订单完成, 订单号为:658491143
-2024-10-17 18:53:19,077 - INFO - 创建订单完成, 订单号为:658491143
-2024-10-17 18:53:19,367 - INFO - 创建订单完成, 订单号为:658491150
-2024-10-17 18:53:19,367 - INFO - 创建订单完成, 订单号为:658491150
-2024-10-17 18:53:19,638 - INFO - 创建订单完成, 订单号为:658491154
-2024-10-17 18:53:19,638 - INFO - 创建订单完成, 订单号为:658491154
-2024-10-17 18:53:19,902 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162399642, 'signature': 'c376dd2c7292ce8a52fb9a72f8c15e3c0935fc857f71b693812ca88c01246855'}
-2024-10-17 18:53:19,902 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162399642, 'signature': 'c376dd2c7292ce8a52fb9a72f8c15e3c0935fc857f71b693812ca88c01246855'}
-2024-10-17 18:53:20,178 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162399903, 'signature': 'ae088679983450865aa11fe329123d27105a037d87a68458150288076b85bed5'}
-2024-10-17 18:53:20,178 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162399903, 'signature': 'ae088679983450865aa11fe329123d27105a037d87a68458150288076b85bed5'}
-2024-10-17 18:53:20,465 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162400179, 'signature': 'c0ca60afd97f933412d146b8c2d56da20dcff4681c612b6c6f10ec55d8e26cdf'}
-2024-10-17 18:53:20,465 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162400179, 'signature': 'c0ca60afd97f933412d146b8c2d56da20dcff4681c612b6c6f10ec55d8e26cdf'}
-2024-10-17 18:53:20,734 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162400465, 'signature': 'e8632682dba1b580f6290398228b39d829047e30e249cc9f0de224be16f8c49c'}
-2024-10-17 18:53:20,734 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162400465, 'signature': 'e8632682dba1b580f6290398228b39d829047e30e249cc9f0de224be16f8c49c'}
-2024-10-17 18:53:20,997 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162400735, 'signature': '778ff8c81efb3dfa806d5e0e1174bd201235fddd33070dc19b9765be9d4e9a30'}
-2024-10-17 18:53:20,997 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162400735, 'signature': '778ff8c81efb3dfa806d5e0e1174bd201235fddd33070dc19b9765be9d4e9a30'}
-2024-10-17 18:53:21,252 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162400998, 'signature': '0b37de2e639b0c466d5d97dc81cad82cd3dc8145daee43bd04e01f448260c07e'}
-2024-10-17 18:53:21,252 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162400998, 'signature': '0b37de2e639b0c466d5d97dc81cad82cd3dc8145daee43bd04e01f448260c07e'}
-2024-10-17 18:53:21,625 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162401355, 'signature': 'ba05740fb0e0d54c8b7f20fd765589e2138c03ddc17ac9ab7677fb12901f7fbe'}
-2024-10-17 18:53:21,625 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162401355, 'signature': 'ba05740fb0e0d54c8b7f20fd765589e2138c03ddc17ac9ab7677fb12901f7fbe'}
-2024-10-17 18:53:21,891 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162401626, 'signature': '0917d141a8bf9a384c80ebab7e530a59a9b8c013a8284ecebb6feb0506f62e80'}
-2024-10-17 18:53:21,891 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162401626, 'signature': '0917d141a8bf9a384c80ebab7e530a59a9b8c013a8284ecebb6feb0506f62e80'}
-2024-10-17 18:53:22,154 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162401891, 'signature': '7887d1765a5c10e3c110a7314533a2d757c240473e9ec3c32bb0393d0540b197'}
-2024-10-17 18:53:22,154 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162401891, 'signature': '7887d1765a5c10e3c110a7314533a2d757c240473e9ec3c32bb0393d0540b197'}
-2024-10-17 18:53:22,414 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162402154, 'signature': '32f63f8e9662f72f5c619ecf3de022da172e166bcfe5704cb30b4126df704e30'}
-2024-10-17 18:53:22,414 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162402154, 'signature': '32f63f8e9662f72f5c619ecf3de022da172e166bcfe5704cb30b4126df704e30'}
-2024-10-17 18:53:22,672 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162402416, 'signature': 'c8c52afb07f74ae8f305acede508be629e8b85685dc2730ca8b8e804c48133b2'}
-2024-10-17 18:53:22,672 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162402416, 'signature': 'c8c52afb07f74ae8f305acede508be629e8b85685dc2730ca8b8e804c48133b2'}
-2024-10-17 18:53:22,933 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162402673, 'signature': 'be7051fe19b0956b6eaa8cb9016025d35f917d3529807174b9b507e6c02b136b'}
-2024-10-17 18:53:22,933 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162402673, 'signature': 'be7051fe19b0956b6eaa8cb9016025d35f917d3529807174b9b507e6c02b136b'}
-2024-10-17 18:53:23,289 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162403036, 'signature': 'b030ae477ab767724cb7521ee358730b9ef13f7850fc1b03428853220c0d74e6'}
-2024-10-17 18:53:23,289 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162403036, 'signature': 'b030ae477ab767724cb7521ee358730b9ef13f7850fc1b03428853220c0d74e6'}
-2024-10-17 18:53:23,610 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162403290, 'signature': 'd9ebe7a0490e0055313473b677aaeec5af34a663d4c1dfaf481d542315e3e2fb'}
-2024-10-17 18:53:23,610 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162403290, 'signature': 'd9ebe7a0490e0055313473b677aaeec5af34a663d4c1dfaf481d542315e3e2fb'}
-2024-10-17 18:53:23,888 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162403611, 'signature': '6cab42b344454749bb487b9783377c64ab74b38254b78e57d1bd0708bfb95b65'}
-2024-10-17 18:53:23,888 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162403611, 'signature': '6cab42b344454749bb487b9783377c64ab74b38254b78e57d1bd0708bfb95b65'}
-2024-10-17 18:53:24,164 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162403889, 'signature': 'f1b412f4868450b8ac0ff5539705cd05c7cd8b7d1cd60042f89734c97fcae6db'}
-2024-10-17 18:53:24,164 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162403889, 'signature': 'f1b412f4868450b8ac0ff5539705cd05c7cd8b7d1cd60042f89734c97fcae6db'}
-2024-10-17 18:53:24,425 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162404165, 'signature': '8d05136d6c45611c4c9d4c8402be56f8355a7f94008b2c837328fe1a06a8ddcb'}
-2024-10-17 18:53:24,425 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162404165, 'signature': '8d05136d6c45611c4c9d4c8402be56f8355a7f94008b2c837328fe1a06a8ddcb'}
-2024-10-17 18:53:24,690 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162404427, 'signature': '3f2e093763019d42f3a4bb4df4ce638b61eb719cf7bdc803bcf7e1beb833f1a7'}
-2024-10-17 18:53:24,690 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162404427, 'signature': '3f2e093763019d42f3a4bb4df4ce638b61eb719cf7bdc803bcf7e1beb833f1a7'}
-2024-10-17 18:53:25,045 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162404793, 'signature': '9027ba068d355f2a6f8ab4f15e468f8b876adb52d413c563eb4466c641800338'}
-2024-10-17 18:53:25,045 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162404793, 'signature': '9027ba068d355f2a6f8ab4f15e468f8b876adb52d413c563eb4466c641800338'}
-2024-10-17 18:53:25,294 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162405046, 'signature': '8b5fc75f58a46d8fd1d207052967a2d79f0193b978daf9ae62b2ed2ba2cde5c9'}
-2024-10-17 18:53:25,294 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162405046, 'signature': '8b5fc75f58a46d8fd1d207052967a2d79f0193b978daf9ae62b2ed2ba2cde5c9'}
-2024-10-17 18:53:25,553 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162405295, 'signature': '27a16faef7d811a47ebefce45efec578b320ad656af661c2a0d2633dec8950d3'}
-2024-10-17 18:53:25,553 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162405295, 'signature': '27a16faef7d811a47ebefce45efec578b320ad656af661c2a0d2633dec8950d3'}
-2024-10-17 18:53:25,813 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162405555, 'signature': '764b2ac21a561c597bd68101324caf91845680d20ebfe523ba02c9d45516d275'}
-2024-10-17 18:53:25,813 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162405555, 'signature': '764b2ac21a561c597bd68101324caf91845680d20ebfe523ba02c9d45516d275'}
-2024-10-17 18:53:26,083 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162405814, 'signature': '568c39ae1e65e74cf3418f9557096528a22d3181cfbfaf70b89fe79aab142578'}
-2024-10-17 18:53:26,083 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162405814, 'signature': '568c39ae1e65e74cf3418f9557096528a22d3181cfbfaf70b89fe79aab142578'}
-2024-10-17 18:53:26,380 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162406084, 'signature': '860394aabd1acce170c5b0cec8d89305db661ae8d069c7f600617de5cb3883ed'}
-2024-10-17 18:53:26,380 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162406084, 'signature': '860394aabd1acce170c5b0cec8d89305db661ae8d069c7f600617de5cb3883ed'}
-2024-10-17 18:53:26,743 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162406485, 'signature': '39ace64a78f7c4157010940b352a53c267a961fd23ce947af6251e2c4ca7306e'}
-2024-10-17 18:53:26,743 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162406485, 'signature': '39ace64a78f7c4157010940b352a53c267a961fd23ce947af6251e2c4ca7306e'}
-2024-10-17 18:53:27,006 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162406743, 'signature': 'f1b13afeb012dbe480bc908bc2a18228ad082d9ebf50ea803d877157923c170b'}
-2024-10-17 18:53:27,006 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162406743, 'signature': 'f1b13afeb012dbe480bc908bc2a18228ad082d9ebf50ea803d877157923c170b'}
-2024-10-17 18:53:27,257 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162407007, 'signature': '77813f19a954eff50ef53021970574425fa48ff5335773ba6267ffe46c248622'}
-2024-10-17 18:53:27,257 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162407007, 'signature': '77813f19a954eff50ef53021970574425fa48ff5335773ba6267ffe46c248622'}
-2024-10-17 18:53:27,523 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162407258, 'signature': '92fc7d7f8f424aa04a4abc22d972b698288a9da418dbeebe84e8166b1e067d59'}
-2024-10-17 18:53:27,523 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162407258, 'signature': '92fc7d7f8f424aa04a4abc22d972b698288a9da418dbeebe84e8166b1e067d59'}
-2024-10-17 18:53:27,778 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162407523, 'signature': 'ae77e0138e22fa4c9543ab776e118bf6701466c60e299bf1d18c6391f4dc5676'}
-2024-10-17 18:53:27,778 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162407523, 'signature': 'ae77e0138e22fa4c9543ab776e118bf6701466c60e299bf1d18c6391f4dc5676'}
-2024-10-17 18:53:28,052 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162407778, 'signature': '7849f72c696a0698cf3dfe17f48d0da4a5ccadda057c9440076dbc63d72c57d8'}
-2024-10-17 18:53:28,052 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162407778, 'signature': '7849f72c696a0698cf3dfe17f48d0da4a5ccadda057c9440076dbc63d72c57d8'}
-2024-10-17 18:53:28,416 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162408153, 'signature': 'd6bf1d059a2b8b36ccc5a0e86810903d932fa1de621079df419d77e9dfcee40c'}
-2024-10-17 18:53:28,416 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162408153, 'signature': 'd6bf1d059a2b8b36ccc5a0e86810903d932fa1de621079df419d77e9dfcee40c'}
-2024-10-17 18:53:28,669 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162408417, 'signature': 'efd4ecc93c39944e161d74653bf3d89f9397fa008db100e4fca85a20ab62265d'}
-2024-10-17 18:53:28,669 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162408417, 'signature': 'efd4ecc93c39944e161d74653bf3d89f9397fa008db100e4fca85a20ab62265d'}
-2024-10-17 18:53:28,922 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162408670, 'signature': 'fa105693f394284008b670906d89c9b76c412ca38642c6953965a53120847fe3'}
-2024-10-17 18:53:28,922 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162408670, 'signature': 'fa105693f394284008b670906d89c9b76c412ca38642c6953965a53120847fe3'}
-2024-10-17 18:53:29,177 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162408923, 'signature': '07ce29188357939cc3ee1d9aa104a35d1eb17dc919728505df39d00c9741ad73'}
-2024-10-17 18:53:29,177 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162408923, 'signature': '07ce29188357939cc3ee1d9aa104a35d1eb17dc919728505df39d00c9741ad73'}
-2024-10-17 18:53:29,433 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162409178, 'signature': 'ed99deb40385c27d9d475f6b69b3f9b255f2117b78ab18311afa01ac81e40981'}
-2024-10-17 18:53:29,433 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162409178, 'signature': 'ed99deb40385c27d9d475f6b69b3f9b255f2117b78ab18311afa01ac81e40981'}
-2024-10-17 18:53:29,688 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162409434, 'signature': '88dace70ddedb16a77c8f758abce13b9d990e31c8d80f2ad0c18c28c7e5248d4'}
-2024-10-17 18:53:29,688 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162409434, 'signature': '88dace70ddedb16a77c8f758abce13b9d990e31c8d80f2ad0c18c28c7e5248d4'}
-2024-10-17 18:53:30,054 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162409791, 'signature': 'd2704fccd241daa1035f56ae3a64bffa91f89dc0d2b5e01c52d31c5ed93b03be'}
-2024-10-17 18:53:30,054 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162409791, 'signature': 'd2704fccd241daa1035f56ae3a64bffa91f89dc0d2b5e01c52d31c5ed93b03be'}
-2024-10-17 18:53:30,292 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162410055, 'signature': '409cc40366b54252ca677ceb7ea3e2c000226834990be1be83d4418f0aac4ba7'}
-2024-10-17 18:53:30,292 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162410055, 'signature': '409cc40366b54252ca677ceb7ea3e2c000226834990be1be83d4418f0aac4ba7'}
-2024-10-17 18:53:30,541 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162410293, 'signature': '5082bfe308d7da5cc4f7bb720521b5818d8276a58b74d503cf5317463d538b9b'}
-2024-10-17 18:53:30,541 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162410293, 'signature': '5082bfe308d7da5cc4f7bb720521b5818d8276a58b74d503cf5317463d538b9b'}
-2024-10-17 18:53:30,934 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162410542, 'signature': '9c7bde3fec4bd2d27e7c9ec47517b5c340a90be339c0b8f6bc2d0b88147fda4d'}
-2024-10-17 18:53:30,934 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162410542, 'signature': '9c7bde3fec4bd2d27e7c9ec47517b5c340a90be339c0b8f6bc2d0b88147fda4d'}
-2024-10-17 18:53:31,184 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162410935, 'signature': '1793f1a86d57c24945a08c12b65df447433fe3b5fe387b10d1974b64ca53fe08'}
-2024-10-17 18:53:31,184 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162410935, 'signature': '1793f1a86d57c24945a08c12b65df447433fe3b5fe387b10d1974b64ca53fe08'}
-2024-10-17 18:53:31,446 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162411184, 'signature': '50958372eaac9ba1748ce6cc69d8151848a33c5401fd7ffa1d618e0cafd51982'}
-2024-10-17 18:53:31,446 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162411184, 'signature': '50958372eaac9ba1748ce6cc69d8151848a33c5401fd7ffa1d618e0cafd51982'}
-2024-10-17 18:53:32,806 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162411548, 'signature': '7f9744a2b2cfc1d58562dfc3be796c94a4af91e5c61878715e26cb76853a28c9'}
-2024-10-17 18:53:32,806 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162411548, 'signature': '7f9744a2b2cfc1d58562dfc3be796c94a4af91e5c61878715e26cb76853a28c9'}
-2024-10-17 18:53:33,942 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162412806, 'signature': 'aecb4c4689c8231a97e6a0b60c762634c9d644580ea012c6d624b15a8425ad3f'}
-2024-10-17 18:53:33,942 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162412806, 'signature': 'aecb4c4689c8231a97e6a0b60c762634c9d644580ea012c6d624b15a8425ad3f'}
-2024-10-17 18:53:34,727 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162413942, 'signature': 'bdac1a006d538ba2f0b521acb32522c4cb8b5be88e20fe68822ec2bc21315f02'}
-2024-10-17 18:53:34,727 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162413942, 'signature': 'bdac1a006d538ba2f0b521acb32522c4cb8b5be88e20fe68822ec2bc21315f02'}
-2024-10-17 18:53:35,465 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162414727, 'signature': '87facf36242a2e2d9dca2b94a330f0da7d5f95479556380bbe96ee4f2eb43167'}
-2024-10-17 18:53:35,465 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162414727, 'signature': '87facf36242a2e2d9dca2b94a330f0da7d5f95479556380bbe96ee4f2eb43167'}
-2024-10-17 18:53:35,725 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162415466, 'signature': '07b9af47b7fb77de5e1fc53a5ed335e38399df695f46e39e35ea43de7611de87'}
-2024-10-17 18:53:35,725 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162415466, 'signature': '07b9af47b7fb77de5e1fc53a5ed335e38399df695f46e39e35ea43de7611de87'}
-2024-10-17 18:53:36,004 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162415726, 'signature': 'a3fea483e70fd1ec4940f499bd6af2ffa0cf15121667d1bf1fccafc1bfc3bcab'}
-2024-10-17 18:53:36,004 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162415726, 'signature': 'a3fea483e70fd1ec4940f499bd6af2ffa0cf15121667d1bf1fccafc1bfc3bcab'}
-2024-10-17 18:53:36,358 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162416107, 'signature': '5a8600d602465c735ca022df48b4253cf91ba77d663a03f1822bef71fa1beadf'}
-2024-10-17 18:53:36,358 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162416107, 'signature': '5a8600d602465c735ca022df48b4253cf91ba77d663a03f1822bef71fa1beadf'}
-2024-10-17 18:53:37,311 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162416359, 'signature': '7eebf102f23b7671c75458bc7dce2e66e7bb0d8e2d5954e1755324721f09c65a'}
-2024-10-17 18:53:37,311 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162416359, 'signature': '7eebf102f23b7671c75458bc7dce2e66e7bb0d8e2d5954e1755324721f09c65a'}
-2024-10-17 18:53:37,577 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162417311, 'signature': '024d2faaec79e9febc6d2d3b05c983d5b29a3f4f6db8fb95bdb6db2a7a6c195e'}
-2024-10-17 18:53:37,577 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162417311, 'signature': '024d2faaec79e9febc6d2d3b05c983d5b29a3f4f6db8fb95bdb6db2a7a6c195e'}
-2024-10-17 18:53:39,462 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162417577, 'signature': 'ce892b9380915907e6aa678b4665d20b5db7274ba73192726bf91a8caea48a9f'}
-2024-10-17 18:53:39,462 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162417577, 'signature': 'ce892b9380915907e6aa678b4665d20b5db7274ba73192726bf91a8caea48a9f'}
-2024-10-17 18:53:40,183 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162419463, 'signature': 'b98833cb04b77c8da3add1d897f30f34842c5d80422f90bbf870d13fbe7de6b4'}
-2024-10-17 18:53:40,183 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162419463, 'signature': 'b98833cb04b77c8da3add1d897f30f34842c5d80422f90bbf870d13fbe7de6b4'}
-2024-10-17 18:53:41,426 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162420183, 'signature': 'a7b2c045774c54f3cb5b856e10597f2fb7c4886d1084c4e289fc4609b025c0ff'}
-2024-10-17 18:53:41,426 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162420183, 'signature': 'a7b2c045774c54f3cb5b856e10597f2fb7c4886d1084c4e289fc4609b025c0ff'}
-2024-10-17 18:53:42,530 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162421529, 'signature': 'c189b8e6cc9837ff3076e14382cec9cbb10bed8b43530f7086b46cbfb0344436'}
-2024-10-17 18:53:42,530 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162421529, 'signature': 'c189b8e6cc9837ff3076e14382cec9cbb10bed8b43530f7086b46cbfb0344436'}
-2024-10-17 18:53:42,769 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162422532, 'signature': 'beace7b729b75c599b9888e41ff35662ca3623bf00e32bbbc91a4d9fafc40f05'}
-2024-10-17 18:53:42,769 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162422532, 'signature': 'beace7b729b75c599b9888e41ff35662ca3623bf00e32bbbc91a4d9fafc40f05'}
-2024-10-17 18:53:43,027 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162422769, 'signature': '652c29517d1ead23a3d8f50d532eb15c9abf840fad69b2736e7c0fbb50b5a2ef'}
-2024-10-17 18:53:43,027 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162422769, 'signature': '652c29517d1ead23a3d8f50d532eb15c9abf840fad69b2736e7c0fbb50b5a2ef'}
-2024-10-17 18:53:43,305 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162423028, 'signature': 'c7738f5788ff3845f941eaae37445600f058ae024d1f7bc0c4344791a3f4dce0'}
-2024-10-17 18:53:43,305 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162423028, 'signature': 'c7738f5788ff3845f941eaae37445600f058ae024d1f7bc0c4344791a3f4dce0'}
-2024-10-17 18:53:43,582 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162423306, 'signature': 'c12821ae9dc3ffe0f4ef424a0fbda932f1f52c9dc0c7ad12f893abee539fb0c6'}
-2024-10-17 18:53:43,582 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162423306, 'signature': 'c12821ae9dc3ffe0f4ef424a0fbda932f1f52c9dc0c7ad12f893abee539fb0c6'}
-2024-10-17 18:53:43,851 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162423583, 'signature': '6b6c3f98e4e87097e0d4d047ba17a6184b691d786e15a36e2c31335abda8dc74'}
-2024-10-17 18:53:43,851 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162423583, 'signature': '6b6c3f98e4e87097e0d4d047ba17a6184b691d786e15a36e2c31335abda8dc74'}
-2024-10-17 18:53:44,242 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162423955, 'signature': '3b145352c9718b822e4ad65043fcb1139a846f0ab44fa488651769cd4d2c74f6'}
-2024-10-17 18:53:44,242 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162423955, 'signature': '3b145352c9718b822e4ad65043fcb1139a846f0ab44fa488651769cd4d2c74f6'}
-2024-10-17 18:53:44,507 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162424243, 'signature': '3b3fc34fa5783cc9b9fee0e1acba95eedaf374191372c063bf63676bb80d6357'}
-2024-10-17 18:53:44,507 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162424243, 'signature': '3b3fc34fa5783cc9b9fee0e1acba95eedaf374191372c063bf63676bb80d6357'}
-2024-10-17 18:53:44,789 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162424508, 'signature': 'b8af29ae18892c68d86bde8ab1f88ee537f7de64e27096cbc983a0f13259728b'}
-2024-10-17 18:53:44,789 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162424508, 'signature': 'b8af29ae18892c68d86bde8ab1f88ee537f7de64e27096cbc983a0f13259728b'}
-2024-10-17 18:53:45,043 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162424789, 'signature': '4aa6113b5f45842b0b010f4176d9c0585b2f82bd90e0a38403f8ee71b4738a59'}
-2024-10-17 18:53:45,043 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162424789, 'signature': '4aa6113b5f45842b0b010f4176d9c0585b2f82bd90e0a38403f8ee71b4738a59'}
-2024-10-17 18:53:45,309 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162425043, 'signature': 'fcdf5aa0214504abeae6ffffdd23f555a7abf93cd82692784112cdd0089f8774'}
-2024-10-17 18:53:45,309 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162425043, 'signature': 'fcdf5aa0214504abeae6ffffdd23f555a7abf93cd82692784112cdd0089f8774'}
-2024-10-17 18:53:45,570 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162425311, 'signature': 'efbb63f7aec7595d615812cfa894a785b24a3df903c88697d9cf975ae4cc228d'}
-2024-10-17 18:53:45,570 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162425311, 'signature': 'efbb63f7aec7595d615812cfa894a785b24a3df903c88697d9cf975ae4cc228d'}
-2024-10-17 18:53:45,934 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162425673, 'signature': 'bc0314ac285a7fa7bb67dcd307de3933425a8215fd96bfe903871fd236931e2e'}
-2024-10-17 18:53:45,934 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162425673, 'signature': 'bc0314ac285a7fa7bb67dcd307de3933425a8215fd96bfe903871fd236931e2e'}
-2024-10-17 18:53:46,196 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162425935, 'signature': '263ad544aa7716e0b441e8178b11fca3aabe2964cd6883a82ab3d7aa81998109'}
-2024-10-17 18:53:46,196 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162425935, 'signature': '263ad544aa7716e0b441e8178b11fca3aabe2964cd6883a82ab3d7aa81998109'}
-2024-10-17 18:53:46,442 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162426197, 'signature': '7c45ae295fbf5531699064a65d87b9c7d91ef292d77185dde3e8b15e005a26bc'}
-2024-10-17 18:53:46,442 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162426197, 'signature': '7c45ae295fbf5531699064a65d87b9c7d91ef292d77185dde3e8b15e005a26bc'}
-2024-10-17 18:53:46,717 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162426443, 'signature': '1d624daa22ade3fc8bf98ac99cc7daaf667bda5b922e8c20424d9ff872e05b1d'}
-2024-10-17 18:53:46,717 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162426443, 'signature': '1d624daa22ade3fc8bf98ac99cc7daaf667bda5b922e8c20424d9ff872e05b1d'}
-2024-10-17 18:53:46,987 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162426718, 'signature': '97e692dc1c2d6a118ddeb1d2e681cecfbb1fb641c370d44f5da374dd764af397'}
-2024-10-17 18:53:46,987 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162426718, 'signature': '97e692dc1c2d6a118ddeb1d2e681cecfbb1fb641c370d44f5da374dd764af397'}
-2024-10-17 18:53:47,250 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162426988, 'signature': '78c1fbb61855b0df92bf52b2676fd1c462a888f1cd0ed4e7da52f86a952c662c'}
-2024-10-17 18:53:47,250 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162426988, 'signature': '78c1fbb61855b0df92bf52b2676fd1c462a888f1cd0ed4e7da52f86a952c662c'}
-2024-10-17 18:53:47,594 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162427351, 'signature': 'add25bb0597eab2bbf6ff2191155a080aa445d11e46684672bd6150d2766317d'}
-2024-10-17 18:53:47,594 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162427351, 'signature': 'add25bb0597eab2bbf6ff2191155a080aa445d11e46684672bd6150d2766317d'}
-2024-10-17 18:53:47,850 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162427595, 'signature': 'c3d1b5b0ffdfddce82ecd2c88601a7189981cf0ac56779520b4db88669c85348'}
-2024-10-17 18:53:47,850 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162427595, 'signature': 'c3d1b5b0ffdfddce82ecd2c88601a7189981cf0ac56779520b4db88669c85348'}
-2024-10-17 18:53:48,125 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162427850, 'signature': '0e5fe3bfee029e989f88fd569c91b52d7440e09dd473dfff2cb1f4be289351a9'}
-2024-10-17 18:53:48,125 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162427850, 'signature': '0e5fe3bfee029e989f88fd569c91b52d7440e09dd473dfff2cb1f4be289351a9'}
-2024-10-17 18:53:48,398 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162428126, 'signature': 'c6f0cf269a298cb6acfa92ab39470bf24f88d1f3d95f2fa39a4f6fad58944406'}
-2024-10-17 18:53:48,398 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162428126, 'signature': 'c6f0cf269a298cb6acfa92ab39470bf24f88d1f3d95f2fa39a4f6fad58944406'}
-2024-10-17 18:53:48,658 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162428399, 'signature': '7e010461f02e398d90d1d5b7dfa115f44fc1f183da2371d3172c1a3712d2488b'}
-2024-10-17 18:53:48,658 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162428399, 'signature': '7e010461f02e398d90d1d5b7dfa115f44fc1f183da2371d3172c1a3712d2488b'}
-2024-10-17 18:53:48,916 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162428658, 'signature': 'f4873efa5d710983e8307b6b0d54237af807433eeea723c2de2c9e21da9b64ac'}
-2024-10-17 18:53:48,916 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162428658, 'signature': 'f4873efa5d710983e8307b6b0d54237af807433eeea723c2de2c9e21da9b64ac'}
-2024-10-17 18:53:49,277 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162429017, 'signature': '10e6aefcfb876849fc76f6db2aa24fdae2e7c233cff0f75e070007c0aa020da0'}
-2024-10-17 18:53:49,277 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162429017, 'signature': '10e6aefcfb876849fc76f6db2aa24fdae2e7c233cff0f75e070007c0aa020da0'}
-2024-10-17 18:53:49,545 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162429278, 'signature': 'd3a246e44e3a5ecc1fbbf872585ea061c9946a2ad058122fe2f339493c616aa8'}
-2024-10-17 18:53:49,545 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162429278, 'signature': 'd3a246e44e3a5ecc1fbbf872585ea061c9946a2ad058122fe2f339493c616aa8'}
-2024-10-17 18:53:49,816 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162429546, 'signature': 'a1b8e1baae471ed898004eb3bd507dcbb35a5a97fd82e7af777999ec6f01eeca'}
-2024-10-17 18:53:49,816 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162429546, 'signature': 'a1b8e1baae471ed898004eb3bd507dcbb35a5a97fd82e7af777999ec6f01eeca'}
-2024-10-17 18:53:50,040 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162429816, 'signature': '45ab5407271dcee2172b0b89658b0bbd4c696ddcddec7a330c0e94db5a17fb80'}
-2024-10-17 18:53:50,040 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162429816, 'signature': '45ab5407271dcee2172b0b89658b0bbd4c696ddcddec7a330c0e94db5a17fb80'}
-2024-10-17 18:53:50,296 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162430041, 'signature': '16f29c9545eef99d077ebbb0a46d1c7c59374552fdb19e6aa193c5ef5ca2a84c'}
-2024-10-17 18:53:50,296 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162430041, 'signature': '16f29c9545eef99d077ebbb0a46d1c7c59374552fdb19e6aa193c5ef5ca2a84c'}
-2024-10-17 18:53:50,546 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162430297, 'signature': 'e554498590ecd3f5566793199f8119aaa312d5883a899ab59c0c8e7166830ade'}
-2024-10-17 18:53:50,546 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162430297, 'signature': 'e554498590ecd3f5566793199f8119aaa312d5883a899ab59c0c8e7166830ade'}
-2024-10-17 18:53:50,882 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162430648, 'signature': 'f8319b7eb878cc204a83239fa3fb477a6489c75645de1cc6c26a7daeddf21dd8'}
-2024-10-17 18:53:50,882 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162430648, 'signature': 'f8319b7eb878cc204a83239fa3fb477a6489c75645de1cc6c26a7daeddf21dd8'}
-2024-10-17 18:53:51,134 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162430883, 'signature': '1db3b521a7163e3ae88a56dc5453be351af19c60a782f88ea62f8a7de0fe64f2'}
-2024-10-17 18:53:51,134 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162430883, 'signature': '1db3b521a7163e3ae88a56dc5453be351af19c60a782f88ea62f8a7de0fe64f2'}
-2024-10-17 18:53:51,407 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162431134, 'signature': 'c3403f90e08f9ca81f9f1d0dcb645d20d89be2fe1eca64009e153ebe9b1826e9'}
-2024-10-17 18:53:51,407 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162431134, 'signature': 'c3403f90e08f9ca81f9f1d0dcb645d20d89be2fe1eca64009e153ebe9b1826e9'}
-2024-10-17 18:53:51,661 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162431407, 'signature': 'bc3beae963f0edff621efb91378be6cffea9dbdc1a9aaeb85f0d9a5bf6bbfed1'}
-2024-10-17 18:53:51,661 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162431407, 'signature': 'bc3beae963f0edff621efb91378be6cffea9dbdc1a9aaeb85f0d9a5bf6bbfed1'}
-2024-10-17 18:53:51,915 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162431661, 'signature': 'a9d460cc399efc52fae5e9388c36d5004f77f5762b4596c9f2a2ffac35ce45da'}
-2024-10-17 18:53:51,915 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162431661, 'signature': 'a9d460cc399efc52fae5e9388c36d5004f77f5762b4596c9f2a2ffac35ce45da'}
-2024-10-17 18:53:52,179 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162431916, 'signature': '0f774b40aa4472460d4c5f42626a77527bf385bab1bc032eaa9f945e6a4fcbb5'}
-2024-10-17 18:53:52,179 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162431916, 'signature': '0f774b40aa4472460d4c5f42626a77527bf385bab1bc032eaa9f945e6a4fcbb5'}
-2024-10-17 18:53:52,527 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162432280, 'signature': '4f853babcf2b9a15bf9b9238b67b8f41052bd84a20a17dd29371331277c8daf0'}
-2024-10-17 18:53:52,527 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162432280, 'signature': '4f853babcf2b9a15bf9b9238b67b8f41052bd84a20a17dd29371331277c8daf0'}
-2024-10-17 18:53:52,781 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162432527, 'signature': '16b2fd7178357892e843423266c757d6b579704175bb6548d707145168f64f66'}
-2024-10-17 18:53:52,781 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162432527, 'signature': '16b2fd7178357892e843423266c757d6b579704175bb6548d707145168f64f66'}
-2024-10-17 18:53:53,023 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162432782, 'signature': '1c6d130ad31edd9f461ff5a69fbaa4ae8f1c53a2c3ab96a7e6e7a514270395c1'}
-2024-10-17 18:53:53,023 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162432782, 'signature': '1c6d130ad31edd9f461ff5a69fbaa4ae8f1c53a2c3ab96a7e6e7a514270395c1'}
-2024-10-17 18:53:53,281 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162433023, 'signature': '46a2329f7b02359633647b672a7d916062b9e5728d3584a99f1e9723226971b0'}
-2024-10-17 18:53:53,281 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162433023, 'signature': '46a2329f7b02359633647b672a7d916062b9e5728d3584a99f1e9723226971b0'}
-2024-10-17 18:53:53,533 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162433282, 'signature': 'b6e894cd416dd5f0aeb103213e32f7df9b71590107e6ec44575dbe2a69611388'}
-2024-10-17 18:53:53,533 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162433282, 'signature': 'b6e894cd416dd5f0aeb103213e32f7df9b71590107e6ec44575dbe2a69611388'}
-2024-10-17 18:53:53,813 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162433534, 'signature': '46dd67576f8362b73dbc7ba1adf4be78e1e34fadb75c35b9c6f52733c222efe8'}
-2024-10-17 18:53:53,813 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162433534, 'signature': '46dd67576f8362b73dbc7ba1adf4be78e1e34fadb75c35b9c6f52733c222efe8'}
-2024-10-17 18:53:54,199 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162433916, 'signature': 'e9398be88a300d3a7c481e0ad4a627e4b764b8a4eecd1a66c7f85cc3a061498b'}
-2024-10-17 18:53:54,199 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162433916, 'signature': 'e9398be88a300d3a7c481e0ad4a627e4b764b8a4eecd1a66c7f85cc3a061498b'}
-2024-10-17 18:53:54,439 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162434199, 'signature': '2baef4e8d0be5f8244ad5ce22945ab29c06d2f630c9a9fe34d3b227c7b7996f1'}
-2024-10-17 18:53:54,439 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162434199, 'signature': '2baef4e8d0be5f8244ad5ce22945ab29c06d2f630c9a9fe34d3b227c7b7996f1'}
-2024-10-17 18:53:54,701 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162434440, 'signature': 'b0bf432993d0253199b6030a1afca219cf710170a1a8e04fbc590c263816ff73'}
-2024-10-17 18:53:54,701 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162434440, 'signature': 'b0bf432993d0253199b6030a1afca219cf710170a1a8e04fbc590c263816ff73'}
-2024-10-17 18:53:54,969 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162434701, 'signature': '940dfb6506e2e815796f14cbf4cb24eae1a27d8ef3d311195d9f774c5994addd'}
-2024-10-17 18:53:54,969 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162434701, 'signature': '940dfb6506e2e815796f14cbf4cb24eae1a27d8ef3d311195d9f774c5994addd'}
-2024-10-17 18:53:55,216 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162434970, 'signature': 'e5b5978c4f1261338906534192fa8458a7cb69ab9e2ba7a9e97ca79395ddd090'}
-2024-10-17 18:53:55,216 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162434970, 'signature': 'e5b5978c4f1261338906534192fa8458a7cb69ab9e2ba7a9e97ca79395ddd090'}
-2024-10-17 18:53:55,486 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162435216, 'signature': 'bd7a982d65df1376099d20e05acde38ce9a8415b74b9c09e894dca8908692fa5'}
-2024-10-17 18:53:55,486 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162435216, 'signature': 'bd7a982d65df1376099d20e05acde38ce9a8415b74b9c09e894dca8908692fa5'}
-2024-10-17 18:53:55,843 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162435589, 'signature': 'd2cff5bc0a549b9715b0fc86e757f8dded8a1c1abf41ef0794df85cc83889ec8'}
-2024-10-17 18:53:55,843 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162435589, 'signature': 'd2cff5bc0a549b9715b0fc86e757f8dded8a1c1abf41ef0794df85cc83889ec8'}
-2024-10-17 18:53:56,110 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162435845, 'signature': 'b5e02a7c18f21fa842a90608ada4f3b3bfa762e0ccb3b6dc7be31cbd2a2440da'}
-2024-10-17 18:53:56,110 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162435845, 'signature': 'b5e02a7c18f21fa842a90608ada4f3b3bfa762e0ccb3b6dc7be31cbd2a2440da'}
-2024-10-17 18:53:56,378 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162436112, 'signature': '3e2c2758e9496ac10dadbc4a920c1abe47d49238a6e2932c96e538bdca2308c8'}
-2024-10-17 18:53:56,378 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162436112, 'signature': '3e2c2758e9496ac10dadbc4a920c1abe47d49238a6e2932c96e538bdca2308c8'}
-2024-10-17 18:53:56,634 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162436378, 'signature': '3c31c64008b8f8507e20ab5efcd5038602b962c820987c25e5188e71f5fafd56'}
-2024-10-17 18:53:56,634 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162436378, 'signature': '3c31c64008b8f8507e20ab5efcd5038602b962c820987c25e5188e71f5fafd56'}
-2024-10-17 18:53:56,889 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162436635, 'signature': 'dc855f3fd63abeb2ee1561d463d7a625261b2a44b8a3eed7345a74f41fae1c38'}
-2024-10-17 18:53:56,889 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162436635, 'signature': 'dc855f3fd63abeb2ee1561d463d7a625261b2a44b8a3eed7345a74f41fae1c38'}
-2024-10-17 18:53:57,177 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162436890, 'signature': '8dc93a9c642df24dc1984403431244770219e7eda6d6449b89d1b45b94d55c42'}
-2024-10-17 18:53:57,177 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162436890, 'signature': '8dc93a9c642df24dc1984403431244770219e7eda6d6449b89d1b45b94d55c42'}
-2024-10-17 18:53:57,549 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162437279, 'signature': 'f538d04b4330d6cf32bb638c2299fdd46221b9785150c806b98fd89d3bfc903f'}
-2024-10-17 18:53:57,549 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162437279, 'signature': 'f538d04b4330d6cf32bb638c2299fdd46221b9785150c806b98fd89d3bfc903f'}
-2024-10-17 18:53:57,843 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162437550, 'signature': 'a65709069a190a50a0b7231c256492c4c756a9fe4d79ad651697e2aa6732e715'}
-2024-10-17 18:53:57,843 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162437550, 'signature': 'a65709069a190a50a0b7231c256492c4c756a9fe4d79ad651697e2aa6732e715'}
-2024-10-17 18:53:58,122 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162437844, 'signature': 'bd4a10fed40748dadf3589f27255a0ecbcc5020639c8fc9b4b7a1a490e30ee59'}
-2024-10-17 18:53:58,122 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162437844, 'signature': 'bd4a10fed40748dadf3589f27255a0ecbcc5020639c8fc9b4b7a1a490e30ee59'}
-2024-10-17 18:53:58,388 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162438122, 'signature': '2a73bd54b08ebd23ee0a943c3967496a44a0a11dc8bdc5cdad2f2f31a1ce6203'}
-2024-10-17 18:53:58,388 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162438122, 'signature': '2a73bd54b08ebd23ee0a943c3967496a44a0a11dc8bdc5cdad2f2f31a1ce6203'}
-2024-10-17 18:53:58,643 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162438388, 'signature': '032253dff8f998fa97264b0fc523478cc3d366fade6c7ef90b8f248314446e73'}
-2024-10-17 18:53:58,643 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162438388, 'signature': '032253dff8f998fa97264b0fc523478cc3d366fade6c7ef90b8f248314446e73'}
-2024-10-17 18:53:58,901 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162438644, 'signature': '0a2cf68d4546ba8f9d7279c2e941e7f3c084ce0d0d7b9cb0161547620af28f71'}
-2024-10-17 18:53:58,901 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162438644, 'signature': '0a2cf68d4546ba8f9d7279c2e941e7f3c084ce0d0d7b9cb0161547620af28f71'}
-2024-10-17 18:53:59,262 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162439003, 'signature': 'e2200b95b8238505227997d8ba9cf4f351c24546d9ec2f4bb5d0342afd71b09e'}
-2024-10-17 18:53:59,262 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162439003, 'signature': 'e2200b95b8238505227997d8ba9cf4f351c24546d9ec2f4bb5d0342afd71b09e'}
-2024-10-17 18:53:59,515 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162439263, 'signature': 'c876f145d93d992f289c24577b3d7d1232701014ca6c9cfac47b9de5a2d92757'}
-2024-10-17 18:53:59,515 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162439263, 'signature': 'c876f145d93d992f289c24577b3d7d1232701014ca6c9cfac47b9de5a2d92757'}
-2024-10-17 18:53:59,789 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162439515, 'signature': 'b047a1314bb0b071e14c05dde14cb7561ab73506ef25bbf9ec2fb7044f958a89'}
-2024-10-17 18:53:59,789 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162439515, 'signature': 'b047a1314bb0b071e14c05dde14cb7561ab73506ef25bbf9ec2fb7044f958a89'}
-2024-10-17 18:54:00,071 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162439790, 'signature': '8204c563e08a1e688b11864a04a17851b7ce222a77c0a588ce5d60a7fed07ba7'}
-2024-10-17 18:54:00,071 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162439790, 'signature': '8204c563e08a1e688b11864a04a17851b7ce222a77c0a588ce5d60a7fed07ba7'}
-2024-10-17 18:54:00,314 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162440072, 'signature': 'ef879dcca6a93a071f143dfe957d5a26366e58378b0f9cd2cbdf3e53997d8c75'}
-2024-10-17 18:54:00,314 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162440072, 'signature': 'ef879dcca6a93a071f143dfe957d5a26366e58378b0f9cd2cbdf3e53997d8c75'}
-2024-10-17 18:54:00,572 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162440314, 'signature': 'f8863a079d7f9c4ec0a53ad37573a4b4a28796113181fefb83b94e0c6916f7c0'}
-2024-10-17 18:54:00,572 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162440314, 'signature': 'f8863a079d7f9c4ec0a53ad37573a4b4a28796113181fefb83b94e0c6916f7c0'}
-2024-10-17 18:54:00,948 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162440675, 'signature': '8944644c2c3a780e2ea45e4a196cba3a15219c5781b8a4a310676153c292ba4a'}
-2024-10-17 18:54:00,948 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162440675, 'signature': '8944644c2c3a780e2ea45e4a196cba3a15219c5781b8a4a310676153c292ba4a'}
-2024-10-17 18:54:01,192 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162440948, 'signature': '96c0d2b9c6900253f6dc20064b06c01c4821283ac174d8aa0be7421a7bfa371d'}
-2024-10-17 18:54:01,192 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162440948, 'signature': '96c0d2b9c6900253f6dc20064b06c01c4821283ac174d8aa0be7421a7bfa371d'}
-2024-10-17 18:54:01,439 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162441193, 'signature': 'bc72c7d21a48b8c51ed35f93663f44d62e6a0db4d2e40bb12523fe215d5c8094'}
-2024-10-17 18:54:01,439 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162441193, 'signature': 'bc72c7d21a48b8c51ed35f93663f44d62e6a0db4d2e40bb12523fe215d5c8094'}
-2024-10-17 18:54:01,711 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162441440, 'signature': 'b605c85c0d317b19d66d42a3d6ef02597a63c214f178faa8bae2fff8e45a06f0'}
-2024-10-17 18:54:01,711 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162441440, 'signature': 'b605c85c0d317b19d66d42a3d6ef02597a63c214f178faa8bae2fff8e45a06f0'}
-2024-10-17 18:54:01,985 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162441712, 'signature': 'f44796d8cabdebadc1e56fed52396dd482ba8246ed275a8212263610b1d6cad6'}
-2024-10-17 18:54:01,985 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162441712, 'signature': 'f44796d8cabdebadc1e56fed52396dd482ba8246ed275a8212263610b1d6cad6'}
-2024-10-17 18:54:02,277 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162441987, 'signature': 'd50a84720a71843582b343b27219cb6461c17583468b1ce8fcb835e3a1c39deb'}
-2024-10-17 18:54:02,277 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162441987, 'signature': 'd50a84720a71843582b343b27219cb6461c17583468b1ce8fcb835e3a1c39deb'}
-2024-10-17 18:54:02,628 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162442377, 'signature': 'aaff2c87b48f92b5c5184b41252023e83b2a4919a214a353df308097029d315b'}
-2024-10-17 18:54:02,628 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162442377, 'signature': 'aaff2c87b48f92b5c5184b41252023e83b2a4919a214a353df308097029d315b'}
-2024-10-17 18:54:02,886 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162442629, 'signature': 'b83f319495a7a3fe81b66f61930cfb9a3d3147e45b3887eef7eace41352eed10'}
-2024-10-17 18:54:02,886 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162442629, 'signature': 'b83f319495a7a3fe81b66f61930cfb9a3d3147e45b3887eef7eace41352eed10'}
-2024-10-17 18:54:03,128 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162442886, 'signature': 'a878aa77bd7c287d46e1fb0ed806858c5c898a4ecdb786d4a6c44173198bd373'}
-2024-10-17 18:54:03,128 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162442886, 'signature': 'a878aa77bd7c287d46e1fb0ed806858c5c898a4ecdb786d4a6c44173198bd373'}
-2024-10-17 18:54:03,379 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162443129, 'signature': 'a4a63c2f5467af8a2f0263e6106577dec6b4095206e8b99b0e61fb8c6dc06a72'}
-2024-10-17 18:54:03,379 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162443129, 'signature': 'a4a63c2f5467af8a2f0263e6106577dec6b4095206e8b99b0e61fb8c6dc06a72'}
-2024-10-17 18:54:03,641 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162443381, 'signature': '50610963b079d2b46cd72f585966ed1697cc7559889361d6141c4ef906385978'}
-2024-10-17 18:54:03,641 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162443381, 'signature': '50610963b079d2b46cd72f585966ed1697cc7559889361d6141c4ef906385978'}
-2024-10-17 18:54:03,893 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162443641, 'signature': '27a197920b6b917ec00b84ccb66691b340f85eff4aa11e7a1764f4c581c19b5a'}
-2024-10-17 18:54:03,893 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162443641, 'signature': '27a197920b6b917ec00b84ccb66691b340f85eff4aa11e7a1764f4c581c19b5a'}
-2024-10-17 18:54:04,258 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162443994, 'signature': '1c0334f6cb9002afca264e68deec996b7b56eedae6f955f8fc1d890f89f523a2'}
-2024-10-17 18:54:04,258 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162443994, 'signature': '1c0334f6cb9002afca264e68deec996b7b56eedae6f955f8fc1d890f89f523a2'}
-2024-10-17 18:54:04,547 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162444259, 'signature': '66fda0bca87dd118b8f8d38fcda2cc8adfd3fccfc0787469177696bf5e338ede'}
-2024-10-17 18:54:04,547 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162444259, 'signature': '66fda0bca87dd118b8f8d38fcda2cc8adfd3fccfc0787469177696bf5e338ede'}
-2024-10-17 18:54:04,805 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162444547, 'signature': 'f24c84461f25adfec5f98dc2aca05fd54d665c2e6845bf9fb0efa38409d96c18'}
-2024-10-17 18:54:04,805 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162444547, 'signature': 'f24c84461f25adfec5f98dc2aca05fd54d665c2e6845bf9fb0efa38409d96c18'}
-2024-10-17 18:54:05,066 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162444805, 'signature': 'aefb1353a69167dd69217ea5eac4fbfe2786b802c08e1dc8362cd4da7e5e7c03'}
-2024-10-17 18:54:05,066 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162444805, 'signature': 'aefb1353a69167dd69217ea5eac4fbfe2786b802c08e1dc8362cd4da7e5e7c03'}
-2024-10-17 18:54:05,323 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162445066, 'signature': 'dc1c6b71ea3cf7cd9a9a8e5f7f708a57dc3974765015562afe2df42a7312aeb4'}
-2024-10-17 18:54:05,323 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162445066, 'signature': 'dc1c6b71ea3cf7cd9a9a8e5f7f708a57dc3974765015562afe2df42a7312aeb4'}
-2024-10-17 18:54:05,588 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162445324, 'signature': '9ecc97d5afbeba0edcde51da51c84bad7778fde4f51929c471f81e9f0372497e'}
-2024-10-17 18:54:05,588 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162445324, 'signature': '9ecc97d5afbeba0edcde51da51c84bad7778fde4f51929c471f81e9f0372497e'}
-2024-10-17 18:54:05,937 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162445690, 'signature': 'c9dd7150060df3ba9d230de8a1cfb4f8ef29e496b0bea719a10c96b6f5c66e10'}
-2024-10-17 18:54:05,937 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162445690, 'signature': 'c9dd7150060df3ba9d230de8a1cfb4f8ef29e496b0bea719a10c96b6f5c66e10'}
-2024-10-17 18:54:06,201 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162445937, 'signature': '7a50d75b2bb800aa76e5bcdc79390ccdab2384b450acf855c9bca502b0c09045'}
-2024-10-17 18:54:06,201 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162445937, 'signature': '7a50d75b2bb800aa76e5bcdc79390ccdab2384b450acf855c9bca502b0c09045'}
-2024-10-17 18:54:06,484 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162446202, 'signature': '4d9c72902d67e57a2850b630e17c6ce4d6739c2341db24971a3e49df22ec3f3d'}
-2024-10-17 18:54:06,484 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162446202, 'signature': '4d9c72902d67e57a2850b630e17c6ce4d6739c2341db24971a3e49df22ec3f3d'}
-2024-10-17 18:54:06,750 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162446484, 'signature': '6b0808c855756121347bda8caecb31867cd9cd6911d27e9d99141b66dd1c795f'}
-2024-10-17 18:54:06,750 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162446484, 'signature': '6b0808c855756121347bda8caecb31867cd9cd6911d27e9d99141b66dd1c795f'}
-2024-10-17 18:54:07,020 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162446750, 'signature': '24ae6b8f7aef7af89bfa36ec1bc192497c914243d9332712478f5a3b9845e4fe'}
-2024-10-17 18:54:07,020 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162446750, 'signature': '24ae6b8f7aef7af89bfa36ec1bc192497c914243d9332712478f5a3b9845e4fe'}
-2024-10-17 18:54:07,280 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162447020, 'signature': '0a14efbea5362cfb92489f41ae3f6e39d299213a620e44f084d2761e1979d941'}
-2024-10-17 18:54:07,280 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162447020, 'signature': '0a14efbea5362cfb92489f41ae3f6e39d299213a620e44f084d2761e1979d941'}
-2024-10-17 18:54:07,619 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162447380, 'signature': '7bc0ccd47037f743207433d3264a77fa5ec7dfd083f7e019d4cb3cb5f2d33c30'}
-2024-10-17 18:54:07,619 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162447380, 'signature': '7bc0ccd47037f743207433d3264a77fa5ec7dfd083f7e019d4cb3cb5f2d33c30'}
-2024-10-17 18:54:07,868 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162447619, 'signature': 'b820841ae1370d5087679bc1122ddc468cde6a866bcd9d2174d11a84c832796d'}
-2024-10-17 18:54:07,868 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162447619, 'signature': 'b820841ae1370d5087679bc1122ddc468cde6a866bcd9d2174d11a84c832796d'}
-2024-10-17 18:54:08,125 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162447868, 'signature': '6acd0ada7aec5060a40f0d9efa887ee5a2484a34751029b975cfdc4a1bd351b9'}
-2024-10-17 18:54:08,125 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162447868, 'signature': '6acd0ada7aec5060a40f0d9efa887ee5a2484a34751029b975cfdc4a1bd351b9'}
-2024-10-17 18:54:08,389 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162448127, 'signature': '71ec27572d80c81b1fd17d40a3733a6c90c6e1a6409ec695d3dd98d10232b47d'}
-2024-10-17 18:54:08,389 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162448127, 'signature': '71ec27572d80c81b1fd17d40a3733a6c90c6e1a6409ec695d3dd98d10232b47d'}
-2024-10-17 18:54:08,655 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162448390, 'signature': '7b30b5e7d15cc6902f3d5d0dffeed5740a9562332f6caa55edd7f63bdb820b94'}
-2024-10-17 18:54:08,655 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162448390, 'signature': '7b30b5e7d15cc6902f3d5d0dffeed5740a9562332f6caa55edd7f63bdb820b94'}
-2024-10-17 18:54:08,924 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162448656, 'signature': 'f22e7f15c74e94fee9c8d663e1ffccad9ffaeeb6ee24c34ca48891f017322a8e'}
-2024-10-17 18:54:08,924 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162448656, 'signature': 'f22e7f15c74e94fee9c8d663e1ffccad9ffaeeb6ee24c34ca48891f017322a8e'}
-2024-10-17 18:54:09,275 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162449027, 'signature': 'fc583b8f3038eed8bf0035d9dd0f12c67faf23c14035060b2963908d269ac29b'}
-2024-10-17 18:54:09,275 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162449027, 'signature': 'fc583b8f3038eed8bf0035d9dd0f12c67faf23c14035060b2963908d269ac29b'}
-2024-10-17 18:54:09,518 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162449275, 'signature': '570a7482f186f8d09c2f82c365cbca93ebc1acbd79d5a3693ba0896c77752cdc'}
-2024-10-17 18:54:09,518 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162449275, 'signature': '570a7482f186f8d09c2f82c365cbca93ebc1acbd79d5a3693ba0896c77752cdc'}
-2024-10-17 18:54:09,758 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162449518, 'signature': '3bae22fdd96dba6b7204d4dddea00da2622c2c2b3085652bf8df7335931803b4'}
-2024-10-17 18:54:09,758 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162449518, 'signature': '3bae22fdd96dba6b7204d4dddea00da2622c2c2b3085652bf8df7335931803b4'}
-2024-10-17 18:54:10,018 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162449758, 'signature': 'da8aef789de107cdb696dfdbb6c2af4404e31f507406bb443cfc354ced4b9415'}
-2024-10-17 18:54:10,018 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162449758, 'signature': 'da8aef789de107cdb696dfdbb6c2af4404e31f507406bb443cfc354ced4b9415'}
-2024-10-17 18:54:10,283 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162450019, 'signature': '8300ea1777863c3b5d553000d18d34d213214b914e9fbbc3f6b6c5e52aaecb02'}
-2024-10-17 18:54:10,283 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162450019, 'signature': '8300ea1777863c3b5d553000d18d34d213214b914e9fbbc3f6b6c5e52aaecb02'}
-2024-10-17 18:54:10,535 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162450284, 'signature': '930b78dfbf5f10efd19a81093e58fe060075db4af9460d1b7fcf4aedd0ce3bfd'}
-2024-10-17 18:54:10,535 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162450284, 'signature': '930b78dfbf5f10efd19a81093e58fe060075db4af9460d1b7fcf4aedd0ce3bfd'}
-2024-10-17 18:54:10,895 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162450639, 'signature': '64c1ec49e98a03ee9aef2873e0c1724595c3510445dbc7d8963b7691ccc936b7'}
-2024-10-17 18:54:10,895 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162450639, 'signature': '64c1ec49e98a03ee9aef2873e0c1724595c3510445dbc7d8963b7691ccc936b7'}
-2024-10-17 18:54:11,175 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162450896, 'signature': 'ca705840c8e62451103e981266191422201b4d779faa32a16a9cee68cfb15078'}
-2024-10-17 18:54:11,175 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162450896, 'signature': 'ca705840c8e62451103e981266191422201b4d779faa32a16a9cee68cfb15078'}
-2024-10-17 18:54:11,440 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162451176, 'signature': '03be70a1b18579372c51f96363031022efb380246fb67f2b09a39a3b1984efe8'}
-2024-10-17 18:54:11,440 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162451176, 'signature': '03be70a1b18579372c51f96363031022efb380246fb67f2b09a39a3b1984efe8'}
-2024-10-17 18:54:11,714 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162451442, 'signature': 'f59d8a0ae85a54c0bcba7ece480a6b6a6d4fc507437c8755390d7604651a21e8'}
-2024-10-17 18:54:11,714 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162451442, 'signature': 'f59d8a0ae85a54c0bcba7ece480a6b6a6d4fc507437c8755390d7604651a21e8'}
-2024-10-17 18:54:11,983 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162451716, 'signature': '64ed27a1dc728c25d82a8d9e67fb288a8fec086afe07060f9cc816981a30d0ba'}
-2024-10-17 18:54:11,983 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162451716, 'signature': '64ed27a1dc728c25d82a8d9e67fb288a8fec086afe07060f9cc816981a30d0ba'}
-2024-10-17 18:54:12,248 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162451984, 'signature': '4d3d73183adf874a38426c99938b132de4606aa10ff29ed193e312c48d1cf44c'}
-2024-10-17 18:54:12,248 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162451984, 'signature': '4d3d73183adf874a38426c99938b132de4606aa10ff29ed193e312c48d1cf44c'}
-2024-10-17 18:54:12,609 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162452350, 'signature': 'd2a53b5868a0d4903091d1ad2bb6a2b6ef33adedcb237f1e8232b19ffcdf71e9'}
-2024-10-17 18:54:12,609 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162452350, 'signature': 'd2a53b5868a0d4903091d1ad2bb6a2b6ef33adedcb237f1e8232b19ffcdf71e9'}
-2024-10-17 18:54:12,850 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162452609, 'signature': '00fa7158c047bae29fdcf9628fb48769ea3a3deed3db86c29768ac189c396313'}
-2024-10-17 18:54:12,850 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162452609, 'signature': '00fa7158c047bae29fdcf9628fb48769ea3a3deed3db86c29768ac189c396313'}
-2024-10-17 18:54:13,146 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162452850, 'signature': '0a14058ad26778a11dcf4755ea49bdd22850c798f771995bc241c8fae9bf5d7a'}
-2024-10-17 18:54:13,146 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162452850, 'signature': '0a14058ad26778a11dcf4755ea49bdd22850c798f771995bc241c8fae9bf5d7a'}
-2024-10-17 18:54:13,415 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162453147, 'signature': '29889f33b11f5d0d54682761c2da0f829d09a4d40aa33a7fcd29374432d9322e'}
-2024-10-17 18:54:13,415 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162453147, 'signature': '29889f33b11f5d0d54682761c2da0f829d09a4d40aa33a7fcd29374432d9322e'}
-2024-10-17 18:54:13,672 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162453415, 'signature': 'de5673fd65ecf51df41dfff040ec4cfa5fa8aaab42dff92ba99bf1c5e18fda8a'}
-2024-10-17 18:54:13,672 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162453415, 'signature': 'de5673fd65ecf51df41dfff040ec4cfa5fa8aaab42dff92ba99bf1c5e18fda8a'}
-2024-10-17 18:54:13,932 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162453672, 'signature': 'cfb26ed865e24e16f588669963f71da137ccd0d0ab57c980208f6015c0cfb9a4'}
-2024-10-17 18:54:13,932 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162453672, 'signature': 'cfb26ed865e24e16f588669963f71da137ccd0d0ab57c980208f6015c0cfb9a4'}
-2024-10-17 18:54:14,291 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162454036, 'signature': '3161f567f29de8e7b773236701658ec4f2cf7d6923f3496c2e309fa1b7b82378'}
-2024-10-17 18:54:14,291 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162454036, 'signature': '3161f567f29de8e7b773236701658ec4f2cf7d6923f3496c2e309fa1b7b82378'}
-2024-10-17 18:54:14,544 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162454291, 'signature': 'c42b1c14d829bde5c95ff08796c60b8ced70becbbd7c7833c6de1dd672f78f6c'}
-2024-10-17 18:54:14,544 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162454291, 'signature': 'c42b1c14d829bde5c95ff08796c60b8ced70becbbd7c7833c6de1dd672f78f6c'}
-2024-10-17 18:54:14,820 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162454544, 'signature': 'af1feb2e1c88e7f74b8407eb57982fbd57c9120a02ef74632ca03bd14833b05f'}
-2024-10-17 18:54:14,820 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162454544, 'signature': 'af1feb2e1c88e7f74b8407eb57982fbd57c9120a02ef74632ca03bd14833b05f'}
-2024-10-17 18:54:15,120 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162454821, 'signature': '89672411517c2ba1d807b90059a1fbef4df5ea27b4603f8b1e1fe073bef0c7ee'}
-2024-10-17 18:54:15,120 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162454821, 'signature': '89672411517c2ba1d807b90059a1fbef4df5ea27b4603f8b1e1fe073bef0c7ee'}
-2024-10-17 18:54:15,388 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162455120, 'signature': '7847ec6d34ebb99266dcc5407985819aa15936be9fdeb640a438f05f497fe861'}
-2024-10-17 18:54:15,388 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162455120, 'signature': '7847ec6d34ebb99266dcc5407985819aa15936be9fdeb640a438f05f497fe861'}
-2024-10-17 18:54:15,644 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162455389, 'signature': '35559d036b288c1e0b9334260414c8166577161a5cc2ad65e73bceb0964e02a3'}
-2024-10-17 18:54:15,644 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162455389, 'signature': '35559d036b288c1e0b9334260414c8166577161a5cc2ad65e73bceb0964e02a3'}
-2024-10-17 18:54:16,012 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162455746, 'signature': 'a667264181e2ca877c6fb0bdcc82293faeb54283ee47973685e345cb5c365ed4'}
-2024-10-17 18:54:16,012 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162455746, 'signature': 'a667264181e2ca877c6fb0bdcc82293faeb54283ee47973685e345cb5c365ed4'}
-2024-10-17 18:54:16,304 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162456013, 'signature': '3690a445e024740084719bfe6889779efa291fb3095b0cdc0e61b1529de11ad6'}
-2024-10-17 18:54:16,304 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162456013, 'signature': '3690a445e024740084719bfe6889779efa291fb3095b0cdc0e61b1529de11ad6'}
-2024-10-17 18:54:16,564 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162456306, 'signature': 'a3ef1b8ee520a75fb49a360a89fd97206797d5fd67112f721e219ec9f1a7e3c4'}
-2024-10-17 18:54:16,564 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162456306, 'signature': 'a3ef1b8ee520a75fb49a360a89fd97206797d5fd67112f721e219ec9f1a7e3c4'}
-2024-10-17 18:54:16,853 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162456565, 'signature': '90dc4cc35dbd748b578869e6a3c35a0ab4df48a396499967b386843feebf416c'}
-2024-10-17 18:54:16,853 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162456565, 'signature': '90dc4cc35dbd748b578869e6a3c35a0ab4df48a396499967b386843feebf416c'}
-2024-10-17 18:54:17,121 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162456854, 'signature': '280a186df5d05ff5c63e9336b5e2dfaeea48a6c6146342269118bf8289e68c44'}
-2024-10-17 18:54:17,121 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162456854, 'signature': '280a186df5d05ff5c63e9336b5e2dfaeea48a6c6146342269118bf8289e68c44'}
-2024-10-17 18:54:17,379 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162457121, 'signature': 'fcacd84ba9db7017895f448f42738178e5557d564fec08a0e1f278b7f09c7096'}
-2024-10-17 18:54:17,379 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162457121, 'signature': 'fcacd84ba9db7017895f448f42738178e5557d564fec08a0e1f278b7f09c7096'}
-2024-10-17 18:54:17,848 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162457481, 'signature': '68aeac1253caa0991047924a5500e207d3f891224f482e29f5d452dfbb6aa105'}
-2024-10-17 18:54:17,848 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162457481, 'signature': '68aeac1253caa0991047924a5500e207d3f891224f482e29f5d452dfbb6aa105'}
-2024-10-17 18:54:18,122 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162457849, 'signature': '06393f0b3fb8cc8b43ba0a72cf78615e985e71139b8fad25b14be5e8df0fb7ac'}
-2024-10-17 18:54:18,122 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162457849, 'signature': '06393f0b3fb8cc8b43ba0a72cf78615e985e71139b8fad25b14be5e8df0fb7ac'}
-2024-10-17 18:54:18,388 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162458123, 'signature': '1176594a815276dee928b1b6a7eb8528679d27d35154ef7c44ebee548a6e2b79'}
-2024-10-17 18:54:18,388 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162458123, 'signature': '1176594a815276dee928b1b6a7eb8528679d27d35154ef7c44ebee548a6e2b79'}
-2024-10-17 18:54:18,642 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162458389, 'signature': '9ae764d7194adbbd87e9a3d25c375628e5c7b46977bb55f1d6a3621917306196'}
-2024-10-17 18:54:18,642 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162458389, 'signature': '9ae764d7194adbbd87e9a3d25c375628e5c7b46977bb55f1d6a3621917306196'}
-2024-10-17 18:54:18,896 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162458643, 'signature': '54fcbee989d2ea4cac6a07dde1cdddf47b89e2e59ff76ecea24315c9f6b03dba'}
-2024-10-17 18:54:18,896 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162458643, 'signature': '54fcbee989d2ea4cac6a07dde1cdddf47b89e2e59ff76ecea24315c9f6b03dba'}
-2024-10-17 18:54:19,204 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162458898, 'signature': '5689841f1041af65bbc9d784401445f8e88c2cbc33d6ef4f49013ad7eff83bfe'}
-2024-10-17 18:54:19,204 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162458898, 'signature': '5689841f1041af65bbc9d784401445f8e88c2cbc33d6ef4f49013ad7eff83bfe'}
-2024-10-17 18:54:19,575 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162459305, 'signature': '10cb2de1631a3c3ea4b636afe56c5747268d081321d415459748ff1f259890e2'}
-2024-10-17 18:54:19,575 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162459305, 'signature': '10cb2de1631a3c3ea4b636afe56c5747268d081321d415459748ff1f259890e2'}
-2024-10-17 18:54:19,820 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162459576, 'signature': '948e8a4479d07397fa13141612062c5c18c796cfc41e9c874447a0355e513a10'}
-2024-10-17 18:54:19,820 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162459576, 'signature': '948e8a4479d07397fa13141612062c5c18c796cfc41e9c874447a0355e513a10'}
-2024-10-17 18:54:20,076 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162459821, 'signature': 'fd5b7af72ca2e1a3461ff8d0646a0adc1640a81497ed57df83556a319e093d93'}
-2024-10-17 18:54:20,076 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162459821, 'signature': 'fd5b7af72ca2e1a3461ff8d0646a0adc1640a81497ed57df83556a319e093d93'}
-2024-10-17 18:54:20,343 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162460077, 'signature': '268836c0c3c47afbec3544da8b2ac4abf3044487aa561e3eb0b38dca75afdefe'}
-2024-10-17 18:54:20,343 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162460077, 'signature': '268836c0c3c47afbec3544da8b2ac4abf3044487aa561e3eb0b38dca75afdefe'}
-2024-10-17 18:54:20,599 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162460344, 'signature': '2697c2bbf6f1c9a1f8705b3eb1c6fae59d032b40b30b17d40287fc54ca727a61'}
-2024-10-17 18:54:20,599 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162460344, 'signature': '2697c2bbf6f1c9a1f8705b3eb1c6fae59d032b40b30b17d40287fc54ca727a61'}
-2024-10-17 18:54:20,850 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162460599, 'signature': '580f70b731e13ffc8a9c27272e111ed144eb0f9a3b97557cffcfd80d062c4275'}
-2024-10-17 18:54:20,850 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162460599, 'signature': '580f70b731e13ffc8a9c27272e111ed144eb0f9a3b97557cffcfd80d062c4275'}
-2024-10-17 18:54:21,225 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162460951, 'signature': 'd12c5a3a6c4d15d71cc63879fc8fda1a39e52fdc961468c9e2e5e6031400bd84'}
-2024-10-17 18:54:21,225 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162460951, 'signature': 'd12c5a3a6c4d15d71cc63879fc8fda1a39e52fdc961468c9e2e5e6031400bd84'}
-2024-10-17 18:54:21,489 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162461226, 'signature': '2152d3fc90004b0bf77fe3e1446814fbfd4d1207e9333c39b889fa2dc46cfd6a'}
-2024-10-17 18:54:21,489 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162461226, 'signature': '2152d3fc90004b0bf77fe3e1446814fbfd4d1207e9333c39b889fa2dc46cfd6a'}
-2024-10-17 18:54:21,754 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162461490, 'signature': '9c9321e87ac1556f41a0f62e68ee5a423e840a1dec1f8069e0e9aa9a0f9df3d8'}
-2024-10-17 18:54:21,754 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162461490, 'signature': '9c9321e87ac1556f41a0f62e68ee5a423e840a1dec1f8069e0e9aa9a0f9df3d8'}
-2024-10-17 18:54:22,017 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162461755, 'signature': '0cf75a684e4ddc653aa80d3884a0023c361d2e1fefec558bc0b6a238f9b83c7b'}
-2024-10-17 18:54:22,017 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162461755, 'signature': '0cf75a684e4ddc653aa80d3884a0023c361d2e1fefec558bc0b6a238f9b83c7b'}
-2024-10-17 18:54:22,313 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162462017, 'signature': '3449b6b24c6227cd3c452247f71fc8cd976bc74233b15eaea6438eb268cb68df'}
-2024-10-17 18:54:22,313 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162462017, 'signature': '3449b6b24c6227cd3c452247f71fc8cd976bc74233b15eaea6438eb268cb68df'}
-2024-10-17 18:54:22,581 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162462313, 'signature': '8ca177bb5dacdaa5987bec6fdb724fb0952176ced7db71e712bb86837c6f6348'}
-2024-10-17 18:54:22,581 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162462313, 'signature': '8ca177bb5dacdaa5987bec6fdb724fb0952176ced7db71e712bb86837c6f6348'}
-2024-10-17 18:54:22,953 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162462683, 'signature': '42beec8e300642cba03386a43044acba8b98a549151623b14fca7ebf20745dca'}
-2024-10-17 18:54:22,953 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162462683, 'signature': '42beec8e300642cba03386a43044acba8b98a549151623b14fca7ebf20745dca'}
-2024-10-17 18:54:23,226 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162462954, 'signature': 'bf315922e0078aaf578f41ee8c44f2c0de2cb8961a53d8787c67478a78a900e9'}
-2024-10-17 18:54:23,226 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162462954, 'signature': 'bf315922e0078aaf578f41ee8c44f2c0de2cb8961a53d8787c67478a78a900e9'}
-2024-10-17 18:54:23,467 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162463227, 'signature': '1db7013d1d24c9f5bca80e2e4600a5adc45b914a6d78b76a433744161b5fa976'}
-2024-10-17 18:54:23,467 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162463227, 'signature': '1db7013d1d24c9f5bca80e2e4600a5adc45b914a6d78b76a433744161b5fa976'}
-2024-10-17 18:54:23,707 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162463467, 'signature': '232b4f33d0df1f5a1c701428ef28bb2fdbaafc4381ed5f86dd5517cd55a4b78d'}
-2024-10-17 18:54:23,707 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162463467, 'signature': '232b4f33d0df1f5a1c701428ef28bb2fdbaafc4381ed5f86dd5517cd55a4b78d'}
-2024-10-17 18:54:23,975 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162463708, 'signature': 'cced50b4ee89c45c01974c8133877629fd4867daf1263c2f49a5b904b50c617e'}
-2024-10-17 18:54:23,975 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162463708, 'signature': 'cced50b4ee89c45c01974c8133877629fd4867daf1263c2f49a5b904b50c617e'}
-2024-10-17 18:54:24,224 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162463977, 'signature': '90fa7ad99ed91f3a4ef63dc1ad1c1191937e7ac9ae40b4c0eae1a23c653d1478'}
-2024-10-17 18:54:24,224 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162463977, 'signature': '90fa7ad99ed91f3a4ef63dc1ad1c1191937e7ac9ae40b4c0eae1a23c653d1478'}
-2024-10-17 18:54:24,576 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162464327, 'signature': '0fdda2a1bfdd812eebe4349451f12073abc9fc94060bbe3205de2bb2f952bfaf'}
-2024-10-17 18:54:24,576 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162464327, 'signature': '0fdda2a1bfdd812eebe4349451f12073abc9fc94060bbe3205de2bb2f952bfaf'}
-2024-10-17 18:54:24,815 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162464577, 'signature': '7c82378507b3787685b532b9ec3f5b8da016e7b1821840c741fa56cb28107b6d'}
-2024-10-17 18:54:24,815 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162464577, 'signature': '7c82378507b3787685b532b9ec3f5b8da016e7b1821840c741fa56cb28107b6d'}
-2024-10-17 18:54:25,080 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162464816, 'signature': 'f08b4847ecb8d7e0b0fc02999ef6e2f04412373bad6f5ba1ea58ddb3e6ded14b'}
-2024-10-17 18:54:25,080 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162464816, 'signature': 'f08b4847ecb8d7e0b0fc02999ef6e2f04412373bad6f5ba1ea58ddb3e6ded14b'}
-2024-10-17 18:54:25,343 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162465081, 'signature': '7b96ea8140b3f076e47bf28e86e0fa1ff73fb43e0977dd464c1a5ee2dce6746b'}
-2024-10-17 18:54:25,343 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162465081, 'signature': '7b96ea8140b3f076e47bf28e86e0fa1ff73fb43e0977dd464c1a5ee2dce6746b'}
-2024-10-17 18:54:25,609 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162465343, 'signature': '0f0bc344da09d81f76f39b779667fc3a6fb7b567a508472faf03dc57e541ed52'}
-2024-10-17 18:54:25,609 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162465343, 'signature': '0f0bc344da09d81f76f39b779667fc3a6fb7b567a508472faf03dc57e541ed52'}
-2024-10-17 18:54:25,890 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162465609, 'signature': 'c2526e48d2dfa64605f62693f7febb6a7449bd81d3f36af0d127f7df44af4c4d'}
-2024-10-17 18:54:25,890 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162465609, 'signature': 'c2526e48d2dfa64605f62693f7febb6a7449bd81d3f36af0d127f7df44af4c4d'}
-2024-10-17 18:54:26,254 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162465992, 'signature': '2726d243d4cb175e50c2df629d02f1417d0528228c3d3f62c8a68bfdfe7ce16c'}
-2024-10-17 18:54:26,254 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162465992, 'signature': '2726d243d4cb175e50c2df629d02f1417d0528228c3d3f62c8a68bfdfe7ce16c'}
-2024-10-17 18:54:26,510 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162466254, 'signature': 'e037897d65007718c54d02c15fc4a033190e57ec0e8b042d9eb4c3cec04bd361'}
-2024-10-17 18:54:26,510 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162466254, 'signature': 'e037897d65007718c54d02c15fc4a033190e57ec0e8b042d9eb4c3cec04bd361'}
-2024-10-17 18:54:26,782 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162466511, 'signature': '9eebaf6a4b5b7167bad0bffea26ae17769a537668f0831eb7438cc9ef0e0bb69'}
-2024-10-17 18:54:26,782 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162466511, 'signature': '9eebaf6a4b5b7167bad0bffea26ae17769a537668f0831eb7438cc9ef0e0bb69'}
-2024-10-17 18:54:27,035 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162466783, 'signature': 'dc37e2c88e83daf04d6a0762655e456ef93773daff179c201ddca34486b82fa6'}
-2024-10-17 18:54:27,035 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162466783, 'signature': 'dc37e2c88e83daf04d6a0762655e456ef93773daff179c201ddca34486b82fa6'}
-2024-10-17 18:54:27,318 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162467036, 'signature': '8189981b683252dce6f3fee05e62c65e633424ea69a7135b53068e69d7e7f7c4'}
-2024-10-17 18:54:27,318 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162467036, 'signature': '8189981b683252dce6f3fee05e62c65e633424ea69a7135b53068e69d7e7f7c4'}
-2024-10-17 18:54:27,570 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162467319, 'signature': 'c8219c7b34c9aec8cc4cddf2a06af908907822bdec89c5ddda78a320bb7228f8'}
-2024-10-17 18:54:27,570 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162467319, 'signature': 'c8219c7b34c9aec8cc4cddf2a06af908907822bdec89c5ddda78a320bb7228f8'}
-2024-10-17 18:54:27,935 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162467673, 'signature': 'ac983a63091935cefbae28059cf0bec9d9c258602349b6a0f562a116c7a074e1'}
-2024-10-17 18:54:27,935 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162467673, 'signature': 'ac983a63091935cefbae28059cf0bec9d9c258602349b6a0f562a116c7a074e1'}
-2024-10-17 18:54:28,188 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162467935, 'signature': '88d4a8847c25726f94c2f627d498b5d47be21542df67d711148cf1e78429eb17'}
-2024-10-17 18:54:28,188 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162467935, 'signature': '88d4a8847c25726f94c2f627d498b5d47be21542df67d711148cf1e78429eb17'}
-2024-10-17 18:54:28,444 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162468188, 'signature': '80c1bea393c0e03440e9279e85e1cf5b77acf443c1575e9c62d474e92a3ffbf9'}
-2024-10-17 18:54:28,444 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162468188, 'signature': '80c1bea393c0e03440e9279e85e1cf5b77acf443c1575e9c62d474e92a3ffbf9'}
-2024-10-17 18:54:28,702 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162468444, 'signature': '5385803f31bb4d324e1aea6287ee0da4327525a6f7b88f2280f67ba9ae9c10d2'}
-2024-10-17 18:54:28,702 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162468444, 'signature': '5385803f31bb4d324e1aea6287ee0da4327525a6f7b88f2280f67ba9ae9c10d2'}
-2024-10-17 18:54:28,961 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162468704, 'signature': 'f19a2d2e616c554e41b5facfbfd45db8f0bd919b6d3ddb43a8f09d4928e3aeb3'}
-2024-10-17 18:54:28,961 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162468704, 'signature': 'f19a2d2e616c554e41b5facfbfd45db8f0bd919b6d3ddb43a8f09d4928e3aeb3'}
-2024-10-17 18:54:29,224 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162468963, 'signature': '1df4ee8ea0b32a51f26f7c991c0b248a902597e6112fc18738c8b43f85df5661'}
-2024-10-17 18:54:29,224 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162468963, 'signature': '1df4ee8ea0b32a51f26f7c991c0b248a902597e6112fc18738c8b43f85df5661'}
-2024-10-17 18:54:29,579 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162469327, 'signature': '85c5257edf92feedc18b7aceb17ceab4a6172f154bf55074b2cd508f2402871d'}
-2024-10-17 18:54:29,579 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162469327, 'signature': '85c5257edf92feedc18b7aceb17ceab4a6172f154bf55074b2cd508f2402871d'}
-2024-10-17 18:54:29,853 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162469581, 'signature': 'dd1c97fbdf37f603c66537d5f9f4cc8511a533fb2a619f66d1f4d518a39ce8a8'}
-2024-10-17 18:54:29,853 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162469581, 'signature': 'dd1c97fbdf37f603c66537d5f9f4cc8511a533fb2a619f66d1f4d518a39ce8a8'}
-2024-10-17 18:54:30,128 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162469854, 'signature': 'dad1a271318c96875e12cbf0d9322f763c6ce6f78859581d9beb0328dbb597ec'}
-2024-10-17 18:54:30,128 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162469854, 'signature': 'dad1a271318c96875e12cbf0d9322f763c6ce6f78859581d9beb0328dbb597ec'}
-2024-10-17 18:54:30,396 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162470130, 'signature': 'ee9aab42ad053e6a55b76df1757b9befd59a766fd8902dace8a885a1dd0b0c8f'}
-2024-10-17 18:54:30,396 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162470130, 'signature': 'ee9aab42ad053e6a55b76df1757b9befd59a766fd8902dace8a885a1dd0b0c8f'}
-2024-10-17 18:54:30,663 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162470397, 'signature': '668831d8da1e18b34af4caf848528fdf82ce1bb58a714accef485d5fb7875286'}
-2024-10-17 18:54:30,663 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162470397, 'signature': '668831d8da1e18b34af4caf848528fdf82ce1bb58a714accef485d5fb7875286'}
-2024-10-17 18:54:31,058 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162470665, 'signature': '31ba3b5b53a5b0d8d596335db922b46a1395e2e1fdfdd019ccc2d8ff244a19c0'}
-2024-10-17 18:54:31,058 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162470665, 'signature': '31ba3b5b53a5b0d8d596335db922b46a1395e2e1fdfdd019ccc2d8ff244a19c0'}
-2024-10-17 18:54:31,429 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162471162, 'signature': '62e320d8e7199b8790b4a243e90c1e0ad83ac9c188ffe9f1505a8c8981e107aa'}
-2024-10-17 18:54:31,429 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162471162, 'signature': '62e320d8e7199b8790b4a243e90c1e0ad83ac9c188ffe9f1505a8c8981e107aa'}
-2024-10-17 18:54:31,705 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162471429, 'signature': '08411e501eeec0a4f6d53ff279ed353c03568d4db831f2bbd78013b16e056e70'}
-2024-10-17 18:54:31,705 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162471429, 'signature': '08411e501eeec0a4f6d53ff279ed353c03568d4db831f2bbd78013b16e056e70'}
-2024-10-17 18:54:31,954 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162471706, 'signature': 'de087da6e97038762c2822a38acc511b1f34320a2b8035bc3e523bed23d451a2'}
-2024-10-17 18:54:31,954 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162471706, 'signature': 'de087da6e97038762c2822a38acc511b1f34320a2b8035bc3e523bed23d451a2'}
-2024-10-17 18:54:32,197 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162471955, 'signature': '2d3df3321657f059c7daacd5c4875bb46a5078aa45421984ef272fd11015a1b3'}
-2024-10-17 18:54:32,197 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162471955, 'signature': '2d3df3321657f059c7daacd5c4875bb46a5078aa45421984ef272fd11015a1b3'}
-2024-10-17 18:54:32,455 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162472198, 'signature': '16473af13819d4e3308c9dce4b1841532755e4736f76b803b35ba0d2ad315ee7'}
-2024-10-17 18:54:32,455 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162472198, 'signature': '16473af13819d4e3308c9dce4b1841532755e4736f76b803b35ba0d2ad315ee7'}
-2024-10-17 18:54:32,726 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162472455, 'signature': 'a0944bf1bc2c24012422af071a337746bbfada69f776dc0a21ea21742e689870'}
-2024-10-17 18:54:32,726 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162472455, 'signature': 'a0944bf1bc2c24012422af071a337746bbfada69f776dc0a21ea21742e689870'}
-2024-10-17 18:54:33,084 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162472829, 'signature': 'db2b098a0109e758de71d4173e3388de6472d5631bdc0c55fcd558d40ed595ca'}
-2024-10-17 18:54:33,084 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162472829, 'signature': 'db2b098a0109e758de71d4173e3388de6472d5631bdc0c55fcd558d40ed595ca'}
-2024-10-17 18:54:33,322 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162473084, 'signature': 'ca78d852a37f0694d33b5d27ed340eba0385841ce890cc489a5c06a2429afd47'}
-2024-10-17 18:54:33,322 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162473084, 'signature': 'ca78d852a37f0694d33b5d27ed340eba0385841ce890cc489a5c06a2429afd47'}
-2024-10-17 18:54:33,569 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162473323, 'signature': 'b2eaf9f86cbe20cf6c367db1d489502c110fd2e7a7a25c4bee6fabc965e34d20'}
-2024-10-17 18:54:33,569 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162473323, 'signature': 'b2eaf9f86cbe20cf6c367db1d489502c110fd2e7a7a25c4bee6fabc965e34d20'}
-2024-10-17 18:54:33,817 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162473571, 'signature': '0b168913d481ffa9ebed16c777e14d217ad81f1e4c3b1e928185928d000c50ff'}
-2024-10-17 18:54:33,817 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162473571, 'signature': '0b168913d481ffa9ebed16c777e14d217ad81f1e4c3b1e928185928d000c50ff'}
-2024-10-17 18:54:34,085 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162473818, 'signature': 'c3fd37ac9a90e9a0454078fd05476e0bce6b9ac87e851809ac339a34b735132e'}
-2024-10-17 18:54:34,085 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162473818, 'signature': 'c3fd37ac9a90e9a0454078fd05476e0bce6b9ac87e851809ac339a34b735132e'}
-2024-10-17 18:54:34,332 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162474085, 'signature': '9e5237b8451b10ebd5ed277bd16f1ca0820a2abd15e0d9bb346eee2d90179114'}
-2024-10-17 18:54:34,332 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162474085, 'signature': '9e5237b8451b10ebd5ed277bd16f1ca0820a2abd15e0d9bb346eee2d90179114'}
-2024-10-17 18:54:34,702 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162474435, 'signature': '583aeae6966c59b2a1871426c059216fd9ccfbd0b0e02ac69463b936007124d9'}
-2024-10-17 18:54:34,702 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162474435, 'signature': '583aeae6966c59b2a1871426c059216fd9ccfbd0b0e02ac69463b936007124d9'}
-2024-10-17 18:54:34,954 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162474703, 'signature': '521c780024425acf99dfd4c27f5a684379abcf1b4317793981050c1447de5667'}
-2024-10-17 18:54:34,954 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162474703, 'signature': '521c780024425acf99dfd4c27f5a684379abcf1b4317793981050c1447de5667'}
-2024-10-17 18:54:35,210 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162474955, 'signature': '3e2c008db0afc336c82b3c6d4dfd8f83c43ca0bb275504f76f65435553946bb6'}
-2024-10-17 18:54:35,210 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162474955, 'signature': '3e2c008db0afc336c82b3c6d4dfd8f83c43ca0bb275504f76f65435553946bb6'}
-2024-10-17 18:54:35,585 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162475211, 'signature': 'e61632e33eb6fd03b982373af223a45145d3a760105f3eb1facb4a31dde11438'}
-2024-10-17 18:54:35,585 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162475211, 'signature': 'e61632e33eb6fd03b982373af223a45145d3a760105f3eb1facb4a31dde11438'}
-2024-10-17 18:54:36,841 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162475585, 'signature': 'e1fdc8838ddb11cef4f3c41f484c68cd7d09b94ea152e1b4983ca34c903d714e'}
-2024-10-17 18:54:36,841 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162475585, 'signature': 'e1fdc8838ddb11cef4f3c41f484c68cd7d09b94ea152e1b4983ca34c903d714e'}
-2024-10-17 18:54:37,091 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162476842, 'signature': 'd05c652b9dbf6317ca62e56b04ca38d01d2a917d52759aa0108bdadaa4e19970'}
-2024-10-17 18:54:37,091 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162476842, 'signature': 'd05c652b9dbf6317ca62e56b04ca38d01d2a917d52759aa0108bdadaa4e19970'}
-2024-10-17 18:54:37,458 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162477194, 'signature': 'e2e4ae0f0ff41ab372b51c58b55f466c5e41671894d0b29ec5947457fd66bfe7'}
-2024-10-17 18:54:37,458 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162477194, 'signature': 'e2e4ae0f0ff41ab372b51c58b55f466c5e41671894d0b29ec5947457fd66bfe7'}
-2024-10-17 18:54:37,712 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162477459, 'signature': '14da6d34aedcd234a52fc56363f2eb4b951c56ba8420dc78dd3e95889dbf86be'}
-2024-10-17 18:54:37,712 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162477459, 'signature': '14da6d34aedcd234a52fc56363f2eb4b951c56ba8420dc78dd3e95889dbf86be'}
-2024-10-17 18:54:37,977 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162477712, 'signature': '36ab06b64b3d167c8170b3d7065c698737ad354a0ceeaad01e0a005a68d55b11'}
-2024-10-17 18:54:37,977 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162477712, 'signature': '36ab06b64b3d167c8170b3d7065c698737ad354a0ceeaad01e0a005a68d55b11'}
-2024-10-17 18:54:38,215 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162477978, 'signature': '19a03f777d0696694f96a19a8a324e1327c5a710635b325f1b293dd8b88570a5'}
-2024-10-17 18:54:38,215 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162477978, 'signature': '19a03f777d0696694f96a19a8a324e1327c5a710635b325f1b293dd8b88570a5'}
-2024-10-17 18:54:38,473 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162478216, 'signature': 'bf5e29266d9b72c41d53b819a71fbf3bc584ab2953b6438fd63b78357dce6772'}
-2024-10-17 18:54:38,473 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162478216, 'signature': 'bf5e29266d9b72c41d53b819a71fbf3bc584ab2953b6438fd63b78357dce6772'}
-2024-10-17 18:54:38,739 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162478473, 'signature': '7d93bed2460152b3cda372b05aa0ba7ed058d0bbfd1807a492fd7a3832cbb868'}
-2024-10-17 18:54:38,739 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162478473, 'signature': '7d93bed2460152b3cda372b05aa0ba7ed058d0bbfd1807a492fd7a3832cbb868'}
-2024-10-17 18:54:39,114 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162478842, 'signature': '7774c6d375b528acb0c44713102911e805e3f6d3836a10a33d3a6eb1bf2807d6'}
-2024-10-17 18:54:39,114 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162478842, 'signature': '7774c6d375b528acb0c44713102911e805e3f6d3836a10a33d3a6eb1bf2807d6'}
-2024-10-17 18:54:39,362 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162479115, 'signature': 'b358a0ab071c11aaf0ff8e4be846788e9d752001be50d61c117ef8a4a567f8dd'}
-2024-10-17 18:54:39,362 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162479115, 'signature': 'b358a0ab071c11aaf0ff8e4be846788e9d752001be50d61c117ef8a4a567f8dd'}
-2024-10-17 18:54:39,608 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162479362, 'signature': '9d136db8630c0b581243ada2db81aa73e974acceaeac45451269a76dde8f965f'}
-2024-10-17 18:54:39,608 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162479362, 'signature': '9d136db8630c0b581243ada2db81aa73e974acceaeac45451269a76dde8f965f'}
-2024-10-17 18:54:39,871 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162479609, 'signature': '1904eebf255cc64fe1ff14a77d6162977f44e97ab3e1ad91f42b2a036e6fd8b1'}
-2024-10-17 18:54:39,871 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162479609, 'signature': '1904eebf255cc64fe1ff14a77d6162977f44e97ab3e1ad91f42b2a036e6fd8b1'}
-2024-10-17 18:54:40,125 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162479873, 'signature': '1fb10f61805e29d31c23c8d6115ab87aa3a14f219cb864e0eee758ec000d904e'}
-2024-10-17 18:54:40,125 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162479873, 'signature': '1fb10f61805e29d31c23c8d6115ab87aa3a14f219cb864e0eee758ec000d904e'}
-2024-10-17 18:54:40,374 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162480126, 'signature': '5fa7e20fab3e51062c1d819f42b2f2aeecb0198676799c2ac719d43bba938d6c'}
-2024-10-17 18:54:40,374 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162480126, 'signature': '5fa7e20fab3e51062c1d819f42b2f2aeecb0198676799c2ac719d43bba938d6c'}
-2024-10-17 18:54:40,725 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162480476, 'signature': 'e591102b7ae0d8b0f7f2fe4eadf91a21e9dd3948616b19530efab127731b75f6'}
-2024-10-17 18:54:40,725 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162480476, 'signature': 'e591102b7ae0d8b0f7f2fe4eadf91a21e9dd3948616b19530efab127731b75f6'}
-2024-10-17 18:54:41,000 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162480726, 'signature': '213a6638b8f2d1d861021c88760714f1ce641af95002875714bd7601a7f943d9'}
-2024-10-17 18:54:41,000 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162480726, 'signature': '213a6638b8f2d1d861021c88760714f1ce641af95002875714bd7601a7f943d9'}
-2024-10-17 18:54:41,274 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162481001, 'signature': '594cf2c7cbfad5b1d86dbc0abfba5e0dad990197198a84d0ce7df90c614d80b4'}
-2024-10-17 18:54:41,274 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162481001, 'signature': '594cf2c7cbfad5b1d86dbc0abfba5e0dad990197198a84d0ce7df90c614d80b4'}
-2024-10-17 18:54:41,531 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162481274, 'signature': '74570d35b984df018608696ee2608d98374621d67d5f4311fd1ec1485be14262'}
-2024-10-17 18:54:41,531 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162481274, 'signature': '74570d35b984df018608696ee2608d98374621d67d5f4311fd1ec1485be14262'}
-2024-10-17 18:54:41,795 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162481532, 'signature': '32ca61a8d48f50a2f63e22cf143bc6b666c6adfa522622b660373bd516caa934'}
-2024-10-17 18:54:41,795 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162481532, 'signature': '32ca61a8d48f50a2f63e22cf143bc6b666c6adfa522622b660373bd516caa934'}
-2024-10-17 18:54:42,052 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162481795, 'signature': '34969cfbe45277aeddcbeef4b412ef060a0c89604f77a01b1923eb2a0cb67b14'}
-2024-10-17 18:54:42,052 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162481795, 'signature': '34969cfbe45277aeddcbeef4b412ef060a0c89604f77a01b1923eb2a0cb67b14'}
-2024-10-17 18:54:42,410 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162482154, 'signature': '8755d7e91f111cbdf36688f2c875f49e3c3a7e77c5fd3b6888531e9e8d762947'}
-2024-10-17 18:54:42,410 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162482154, 'signature': '8755d7e91f111cbdf36688f2c875f49e3c3a7e77c5fd3b6888531e9e8d762947'}
-2024-10-17 18:54:42,672 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162482410, 'signature': '1059541b3dbc6080ddaeee5ba12d09b7a1eab56191421190726ac825e8b21949'}
-2024-10-17 18:54:42,672 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162482410, 'signature': '1059541b3dbc6080ddaeee5ba12d09b7a1eab56191421190726ac825e8b21949'}
-2024-10-17 18:54:42,927 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162482672, 'signature': 'e3e8c558913bfa5f55aa3ad8f832352d87311498ace1e7b6e4e24d93f873be4e'}
-2024-10-17 18:54:42,927 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162482672, 'signature': 'e3e8c558913bfa5f55aa3ad8f832352d87311498ace1e7b6e4e24d93f873be4e'}
-2024-10-17 18:54:43,185 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162482928, 'signature': '5f9196cb210bb819a38d7922723cb143927270864acfb9d094dd47b97b0d9216'}
-2024-10-17 18:54:43,185 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162482928, 'signature': '5f9196cb210bb819a38d7922723cb143927270864acfb9d094dd47b97b0d9216'}
-2024-10-17 18:54:43,438 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162483186, 'signature': 'aa4d68a81696148b76f0d7ad4c0f82dc548cf2c6519412e48bc05547da34c432'}
-2024-10-17 18:54:43,438 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162483186, 'signature': 'aa4d68a81696148b76f0d7ad4c0f82dc548cf2c6519412e48bc05547da34c432'}
-2024-10-17 18:54:43,699 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162483439, 'signature': 'df00b8e5e432fa081486dafc7950a2432dab28ea9595315c2dec10a310c0fcc6'}
-2024-10-17 18:54:43,699 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162483439, 'signature': 'df00b8e5e432fa081486dafc7950a2432dab28ea9595315c2dec10a310c0fcc6'}
-2024-10-17 18:54:44,053 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162483802, 'signature': '1287ce1d5f4e2faba5b2f2dca3c84d7378bb73afe8f24c13674bdefe4005b12c'}
-2024-10-17 18:54:44,053 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162483802, 'signature': '1287ce1d5f4e2faba5b2f2dca3c84d7378bb73afe8f24c13674bdefe4005b12c'}
-2024-10-17 18:54:44,313 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162484055, 'signature': 'da045334fad1398164e6a61aeb5c457d6042c2d17ea11d93ff22611415c355a7'}
-2024-10-17 18:54:44,313 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162484055, 'signature': 'da045334fad1398164e6a61aeb5c457d6042c2d17ea11d93ff22611415c355a7'}
-2024-10-17 18:54:44,575 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162484314, 'signature': 'e6395301db39d3d0a29fd94e7d7dc281ec021d6cec6414832c0ccfbe1643d7a8'}
-2024-10-17 18:54:44,575 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162484314, 'signature': 'e6395301db39d3d0a29fd94e7d7dc281ec021d6cec6414832c0ccfbe1643d7a8'}
-2024-10-17 18:54:44,820 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162484577, 'signature': '15655cef4e277f4e0bf5ec0d19d719562ebde3d328ea1b8c075758f9b7c9d745'}
-2024-10-17 18:54:44,820 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162484577, 'signature': '15655cef4e277f4e0bf5ec0d19d719562ebde3d328ea1b8c075758f9b7c9d745'}
-2024-10-17 18:54:45,199 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162484821, 'signature': '519112397a7f24b56dbf4a27a00fa263f0993ff26962a84dcb98cadef20b7f89'}
-2024-10-17 18:54:45,199 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162484821, 'signature': '519112397a7f24b56dbf4a27a00fa263f0993ff26962a84dcb98cadef20b7f89'}
-2024-10-17 18:54:45,454 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162485200, 'signature': 'b42b71f26bf0517f2fb396df9cafd03d1c0827196ed5b5e4c74cb97917cfa53e'}
-2024-10-17 18:54:45,454 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162485200, 'signature': 'b42b71f26bf0517f2fb396df9cafd03d1c0827196ed5b5e4c74cb97917cfa53e'}
-2024-10-17 18:54:46,291 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162485558, 'signature': '5331168629e6ee487be1cb411dc33003d8a8a413d8ddddf314cd6fa896c3014c'}
-2024-10-17 18:54:46,291 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162485558, 'signature': '5331168629e6ee487be1cb411dc33003d8a8a413d8ddddf314cd6fa896c3014c'}
-2024-10-17 18:54:46,585 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162486292, 'signature': '5b0ce54e8de60e1c5fdd6a1af588c6a280a98e6aa47e14a79e225c1e316759bd'}
-2024-10-17 18:54:46,585 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162486292, 'signature': '5b0ce54e8de60e1c5fdd6a1af588c6a280a98e6aa47e14a79e225c1e316759bd'}
-2024-10-17 18:54:46,860 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162486587, 'signature': 'e74eac28ba58b217de9639f0f12de1cdee8256fbe3159bb53b58fd879ae19ba2'}
-2024-10-17 18:54:46,860 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162486587, 'signature': 'e74eac28ba58b217de9639f0f12de1cdee8256fbe3159bb53b58fd879ae19ba2'}
-2024-10-17 18:54:47,121 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162486861, 'signature': 'addb2e105e49e7d4818a16b39c9f76c15e48d05b30b3c0838de5b9376189316e'}
-2024-10-17 18:54:47,121 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162486861, 'signature': 'addb2e105e49e7d4818a16b39c9f76c15e48d05b30b3c0838de5b9376189316e'}
-2024-10-17 18:54:47,380 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162487122, 'signature': '919e3b5e9358c85507301ec9a0d3de9c838de3917434f9c7411a3863143a9216'}
-2024-10-17 18:54:47,380 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162487122, 'signature': '919e3b5e9358c85507301ec9a0d3de9c838de3917434f9c7411a3863143a9216'}
-2024-10-17 18:54:47,633 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162487381, 'signature': 'eee8595b82a4350a698c91dbb38268e698a9d200f8e2741cb8f69fa81f40d08e'}
-2024-10-17 18:54:47,633 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162487381, 'signature': 'eee8595b82a4350a698c91dbb38268e698a9d200f8e2741cb8f69fa81f40d08e'}
-2024-10-17 18:54:47,989 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162487735, 'signature': '75740c4d794e07660a00c96caec94763fb439dc9c294bf4bc56e0cc4b666f129'}
-2024-10-17 18:54:47,989 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162487735, 'signature': '75740c4d794e07660a00c96caec94763fb439dc9c294bf4bc56e0cc4b666f129'}
-2024-10-17 18:54:48,248 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162487990, 'signature': 'defae3aa5c705e1078a85a2b85ab8568d103adde5de58c717c0854fba0b84333'}
-2024-10-17 18:54:48,248 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162487990, 'signature': 'defae3aa5c705e1078a85a2b85ab8568d103adde5de58c717c0854fba0b84333'}
-2024-10-17 18:54:48,495 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162488250, 'signature': '4ea59d4ec101c787a4a6bb5f78df31a58232a201c30b78e79eca6e24757520f8'}
-2024-10-17 18:54:48,495 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162488250, 'signature': '4ea59d4ec101c787a4a6bb5f78df31a58232a201c30b78e79eca6e24757520f8'}
-2024-10-17 18:54:48,736 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162488495, 'signature': '53078a9563a4a780162c83ebc1f001ca5284ed83aab27f618898e30c9af5040b'}
-2024-10-17 18:54:48,736 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162488495, 'signature': '53078a9563a4a780162c83ebc1f001ca5284ed83aab27f618898e30c9af5040b'}
-2024-10-17 18:54:48,990 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162488736, 'signature': '858c7e416f3a33dfe5b9b42fa77fb706c3516ea9b197e38d76ed46bdb2da077f'}
-2024-10-17 18:54:48,990 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162488736, 'signature': '858c7e416f3a33dfe5b9b42fa77fb706c3516ea9b197e38d76ed46bdb2da077f'}
-2024-10-17 18:54:49,253 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162488991, 'signature': '6ebe9ad1b39f67e9098b5d94e6fd2468058ea01ba439b27e763df0664eba386a'}
-2024-10-17 18:54:49,253 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162488991, 'signature': '6ebe9ad1b39f67e9098b5d94e6fd2468058ea01ba439b27e763df0664eba386a'}
-2024-10-17 18:54:49,610 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162489357, 'signature': '1fb6c2b4762d8d70bae85cc4f3c17ce2028c6bf6ddb2f8569935f74bd63fd15d'}
-2024-10-17 18:54:49,610 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162489357, 'signature': '1fb6c2b4762d8d70bae85cc4f3c17ce2028c6bf6ddb2f8569935f74bd63fd15d'}
-2024-10-17 18:54:49,889 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162489612, 'signature': '9177d7cd37df88f595182e615bcaa7aba4e4f65c7cc278f9c55b1619cda97855'}
-2024-10-17 18:54:49,889 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162489612, 'signature': '9177d7cd37df88f595182e615bcaa7aba4e4f65c7cc278f9c55b1619cda97855'}
-2024-10-17 18:54:50,154 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162489890, 'signature': '86a4d4b257b01db8863f3b522728f39bf4f2a878850f190498df530da3332557'}
-2024-10-17 18:54:50,154 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162489890, 'signature': '86a4d4b257b01db8863f3b522728f39bf4f2a878850f190498df530da3332557'}
-2024-10-17 18:54:55,159 - ERROR - 请求 GET /api/v3/order 时发生错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
-2024-10-17 18:54:55,159 - ERROR - 请求 GET /api/v3/order 时发生错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
-2024-10-17 18:54:56,455 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162490155, 'signature': 'b30828767f66e18ff7dd59116738e5ae756f72c714ae7b2f146a9ecf39d5d1ce'}
-2024-10-17 18:54:56,455 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162490155, 'signature': 'b30828767f66e18ff7dd59116738e5ae756f72c714ae7b2f146a9ecf39d5d1ce'}
-2024-10-17 18:54:56,455 - ERROR - 查询订单状态时发生错误:'status',参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162490155, 'signature': 'b30828767f66e18ff7dd59116738e5ae756f72c714ae7b2f146a9ecf39d5d1ce'}
-2024-10-17 18:54:56,455 - ERROR - 查询订单状态时发生错误:'status',参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162490155, 'signature': 'b30828767f66e18ff7dd59116738e5ae756f72c714ae7b2f146a9ecf39d5d1ce'}
-2024-10-17 18:58:42,082 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491128, 'timestamp': 1729162721806, 'signature': '8038dae6fc9cb0ec01d7021887ba43a84a97611d0061d1e33a23c170ea68dd68'}
-2024-10-17 18:58:42,358 - INFO - 订单658491128已成功取消。
-2024-10-17 18:58:42,639 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491130, 'timestamp': 1729162722359, 'signature': 'd73e8c5cc3c08fbb55f0e0f8fe32ea3efe89199180548dac2a9c00c1b64644cc'}
-2024-10-17 18:58:43,099 - INFO - 订单658491130已成功取消。
-2024-10-17 18:58:43,528 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491137, 'timestamp': 1729162723100, 'signature': '0a47ce45814c0ea2e1adad4c00ba2a95969d91929fa6429c019a8adf2c73ad04'}
-2024-10-17 18:58:43,998 - INFO - 订单658491137已成功取消。
-2024-10-17 18:58:46,243 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491143, 'timestamp': 1729162724000, 'signature': '1e7a6d7aa4f2719ca594348634e1a8ba07fbc5ba2a3148966d502e96b59ca608'}
-2024-10-17 18:58:48,101 - INFO - 订单658491143已成功取消。
-2024-10-17 18:58:49,445 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491150, 'timestamp': 1729162728102, 'signature': '8894ae07750d9785c35069d838f93f7887c55329aad54bfc1176f0782245d015'}
-2024-10-17 18:58:51,963 - INFO - 订单658491150已成功取消。
-2024-10-17 18:58:56,492 - INFO - 获取订单状态成功，参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162731964, 'signature': 'b7a50a66ac023416faa14f16998146fdb03c5496d58411156ca708ab5f1a55d4'}
-2024-10-17 18:58:56,492 - ERROR - 查询订单状态时发生错误:'status',参数: {'symbol': 'USDCUSDT', 'orderId': 658491154, 'timestamp': 1729162731964, 'signature': 'b7a50a66ac023416faa14f16998146fdb03c5496d58411156ca708ab5f1a55d4'}
-2024-10-17 18:58:58,219 - INFO - 订单658491154已成功取消。
+2024-10-18 18:34:57,841 - INFO - 创建订单完成, 订单号为:659627919
+2024-10-18 18:34:57,841 - INFO - 创建订单完成, 订单号为:659627919
+2024-10-18 18:34:58,095 - INFO - 创建订单完成, 订单号为:659627924
+2024-10-18 18:34:58,095 - INFO - 创建订单完成, 订单号为:659627924
+2024-10-18 18:34:58,372 - INFO - 创建订单完成, 订单号为:659627945
+2024-10-18 18:34:58,372 - INFO - 创建订单完成, 订单号为:659627945
+2024-10-18 18:34:58,656 - INFO - 创建订单完成, 订单号为:659627947
+2024-10-18 18:34:58,656 - INFO - 创建订单完成, 订单号为:659627947
+2024-10-18 18:34:58,948 - INFO - 创建订单完成, 订单号为:659627959
+2024-10-18 18:34:58,948 - INFO - 创建订单完成, 订单号为:659627959
+2024-10-18 18:34:59,253 - INFO - 创建订单完成, 订单号为:659627965
+2024-10-18 18:34:59,253 - INFO - 创建订单完成, 订单号为:659627965
+2024-10-18 18:37:30,832 - INFO - 订单659627919已成功取消。
+2024-10-18 18:37:33,876 - INFO - 订单659627924已成功取消。
+2024-10-18 18:37:34,389 - INFO - 订单659627945已成功取消。
+2024-10-18 18:37:34,935 - INFO - 订单659627947已成功取消。
+2024-10-18 18:37:35,446 - INFO - 订单659627959已成功取消。
+2024-10-18 18:37:36,011 - INFO - 订单659627965已成功取消。
+2024-10-18 19:05:19,633 - INFO - 创建订单完成, 订单号为:659653869
+2024-10-18 19:05:19,633 - INFO - 创建订单完成, 订单号为:659653869
+2024-10-18 19:05:20,027 - INFO - 创建订单完成, 订单号为:659653879
+2024-10-18 19:05:20,027 - INFO - 创建订单完成, 订单号为:659653879
+2024-10-18 19:05:20,336 - INFO - 创建订单完成, 订单号为:659653893
+2024-10-18 19:05:20,336 - INFO - 创建订单完成, 订单号为:659653893
+2024-10-18 19:05:20,645 - INFO - 创建订单完成, 订单号为:659653897
+2024-10-18 19:05:20,645 - INFO - 创建订单完成, 订单号为:659653897
+2024-10-18 19:05:20,965 - INFO - 创建订单完成, 订单号为:659653906
+2024-10-18 19:05:20,965 - INFO - 创建订单完成, 订单号为:659653906
+2024-10-18 19:05:21,303 - INFO - 创建订单完成, 订单号为:659653912
+2024-10-18 19:05:21,303 - INFO - 创建订单完成, 订单号为:659653912
+2024-10-18 19:07:03,467 - INFO - 订单659653869已成功取消。
+2024-10-18 19:07:03,992 - INFO - 订单659653879已成功取消。
+2024-10-18 19:07:04,534 - INFO - 订单659653893已成功取消。
+2024-10-18 19:07:05,102 - INFO - 订单659653897已成功取消。
+2024-10-18 19:07:05,598 - INFO - 订单659653906已成功取消。
+2024-10-18 19:07:06,213 - INFO - 订单659653912已成功取消。
+2024-10-18 19:17:16,371 - INFO - 创建订单完成, 订单号为:659663782
+2024-10-18 19:17:16,371 - INFO - 创建订单完成, 订单号为:659663782
+2024-10-18 19:17:16,736 - INFO - 创建订单完成, 订单号为:659663787
+2024-10-18 19:17:16,736 - INFO - 创建订单完成, 订单号为:659663787
+2024-10-18 19:17:17,049 - INFO - 创建订单完成, 订单号为:659663789
+2024-10-18 19:17:17,049 - INFO - 创建订单完成, 订单号为:659663789
+2024-10-18 19:17:17,396 - INFO - 创建订单完成, 订单号为:659663797
+2024-10-18 19:17:17,396 - INFO - 创建订单完成, 订单号为:659663797
+2024-10-18 19:17:17,725 - INFO - 创建订单完成, 订单号为:659663799
+2024-10-18 19:17:17,725 - INFO - 创建订单完成, 订单号为:659663799
+2024-10-18 19:17:18,046 - INFO - 创建订单完成, 订单号为:659663804
+2024-10-18 19:17:18,046 - INFO - 创建订单完成, 订单号为:659663804
+2024-10-18 19:18:57,110 - INFO - 订单659663782已成功取消。
+2024-10-18 19:18:57,673 - INFO - 订单659663787已成功取消。
+2024-10-18 19:18:58,193 - INFO - 订单659663789已成功取消。
+2024-10-18 19:18:58,695 - INFO - 订单659663797已成功取消。
+2024-10-18 19:18:59,223 - INFO - 订单659663799已成功取消。
+2024-10-18 19:18:59,746 - INFO - 订单659663804已成功取消。
+2024-10-18 19:42:08,973 - INFO - 创建订单完成, 订单号为:659686676
+2024-10-18 19:42:08,973 - INFO - 创建订单完成, 订单号为:659686676
+2024-10-18 19:42:13,911 - INFO - 创建订单完成, 订单号为:659686707
+2024-10-18 19:42:13,911 - INFO - 创建订单完成, 订单号为:659686707
+2024-10-18 19:42:14,347 - INFO - 创建订单完成, 订单号为:659686726
+2024-10-18 19:42:14,347 - INFO - 创建订单完成, 订单号为:659686726
+2024-10-18 19:42:15,280 - INFO - 创建订单完成, 订单号为:659686737
+2024-10-18 19:42:15,280 - INFO - 创建订单完成, 订单号为:659686737
+2024-10-18 19:42:19,008 - INFO - 创建订单完成, 订单号为:659686786
+2024-10-18 19:42:19,008 - INFO - 创建订单完成, 订单号为:659686786
+2024-10-18 19:42:20,878 - INFO - 创建订单完成, 订单号为:659686798
+2024-10-18 19:42:20,878 - INFO - 创建订单完成, 订单号为:659686798
+2024-10-18 19:42:21,305 - ERROR - 请求 GET /api/v3/account 时发生错误: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?timestamp=1729251736648&signature=db63f6058e134b3e1a14112ad3fcf6061be33d500ba567108d4b9595d760c9bd (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-18 19:42:21,305 - ERROR - 请求 GET /api/v3/account 时发生错误: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?timestamp=1729251736648&signature=db63f6058e134b3e1a14112ad3fcf6061be33d500ba567108d4b9595d760c9bd (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-18 19:42:27,366 - ERROR - 请求 GET /api/v3/account 时发生错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-10-18 19:42:27,366 - ERROR - 请求 GET /api/v3/account 时发生错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-10-18 19:44:08,044 - INFO - 订单659686676已成功取消。
+2024-10-18 19:44:08,616 - INFO - 订单659686707已成功取消。
+2024-10-18 19:44:09,125 - INFO - 订单659686726已成功取消。
+2024-10-18 19:44:09,647 - INFO - 订单659686737已成功取消。
+2024-10-18 19:44:10,210 - INFO - 订单659686786已成功取消。
+2024-10-18 19:44:10,748 - INFO - 订单659686798已成功取消。

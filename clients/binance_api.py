@@ -44,11 +44,8 @@ class Binance():
 
         try:
             response = self.request(endpoint, params=params, method='POST')
-            if 'code' in response:
-                self.logger.error(f"创建订单失败: {response['msg']}")
-            else:
-                self.logger.info(f'创建订单完成, 订单号为:{response['orderId']}')
-                return response['orderId']  # 返回订单 ID
+            self.logger.info(f'创建订单完成, 订单号为:{response['orderId']}')
+            return response['orderId']  # 返回订单 ID
         except Exception as e:
             self.logger.error(f"创建订单过程中发生错误: {e}")
 
@@ -64,7 +61,6 @@ class Binance():
         try:
             response = self.request(endpoint, params=params)
         
-            self.logger.info(f"获取订单状态成功，参数: {params}")
             
             #提取策略类里面所需的字段
             status = response['status']

@@ -5,6 +5,7 @@ from clients.binance_api import Binance
 from config.config import STEP , ORDERS , REDIS_CONFIG ,API_KEY ,API_SECRET , TradingPair 
 from config.mongodb import Database 
 from config.logger import setup_logger
+from utils.ding_ding import DingDing
 
 
 class Strategy:
@@ -15,7 +16,10 @@ class Strategy:
         self.api_client = Binance(API_KEY, API_SECRET)
         self.orders = ORDERS
         self.logger = setup_logger('Strategy', 'Strategy.log')
-        self.database = Database()    
+        self.database = Database()
+        self.dingding = DingDing()
+        self.retry_count = 0  
+        self.max_retries = 3    
 
     
     def close(self):
@@ -30,6 +34,7 @@ class Strategy:
             if order_id:
                 self.database.store_order_id(order_id)  #存入MongoDB
                 self.logger.info(f"已创建 {'买入' if order_type == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
+                self.dingding.send_alert(f"已创建 {'买入' if order_type == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
                 return order_id
         except Exception as e:
             self.logger.error(f"创建订单时发生错误: {e}")
@@ -40,7 +45,6 @@ class Strategy:
         '''检查订单状态'''
         try:
             status = self.api_client.get_order_status(self.pairs,order_id)
-            self.logger.info(f"订单 {order_id} 状态: {status['status']}")
             return status
         except Exception as e:
             self.logger.error(f"检查订单状态时发生错误: {e}")
@@ -79,23 +83,29 @@ class Strategy:
                 try:
                     self.create_maker_order(self.pairs, asset_num, price, order_type)
                     success = True  # 如果创建成功，设置成功状态
-                    print(f"成功创建订单: 价格: {price}, 数量: {asset_num}")
+                    self.logger.info(f"成功创建初始化订单: 价格: {price}, 数量: {asset_num}")
                 except Exception as e:
-                    print(f"创建订单失败: {e}，正在重新尝试...")
+                    self.logger.error(f"初始化创建订单失败: {e}，正在重新尝试...")
                     time.sleep(1)  # 等待 1 秒后重新尝试
 
 
 
     def Logical_trading(self):
         '''逻辑交易'''
-        self.first_create_orders()
+        #清空消息队列
+        self.redis_client.delete('b-depth')
+
+        initialized_orders = False
         
         try:
+            if not initialized_orders:
+                self.first_create_orders()
+                initialized_orders = True
+
             for bid_price, ask_price in self.get_market_prices():
 
                 #获取遍历当前订单的信息状态
                 for order_id in self.database.get_all_order_ids():
-                    print(order_id)
                     data = self.check_order_status(order_id)
                     status = data['status'] #订单完成状态
                     filled_amount = data['filled_amount'] #订单成交数量
@@ -151,11 +161,20 @@ class Strategy:
 
                     elif status == 'PARTIALLY_FILLED' and order_type == 'SELL':
                         print(f"卖出订单{order_id}部分成交，已成交:{filled_amount}，剩余:{remaining_amount} ,继续等待买单完成")
+
+                    elif status == 'CANCELED':
+                        self.database.remove_order_id(order_id)
             
-                time.sleep(0.1)  # 每0.1秒检查一次
+                time.sleep(1)  # 每1秒检查一次
 
         except Exception as e:
             self.logger.error(f"逻辑交易过程中发生错误: {e}")
-        finally:
-            self.close()  #确保在结束时关闭连接
+            self.retry_count += 1  # 增加重连计数
+            if self.retry_count > self.max_retries:
+                self.logger.info("达到最大重连次数，停止尝试。")
+            else:
+                self.logger.info("网络波动，尝试重新接入...")
+                self.Logical_trading() 
+        
+        self.close()  #确保在结束时关闭连接
 

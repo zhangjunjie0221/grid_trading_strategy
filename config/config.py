@@ -53,3 +53,7 @@ proxies = {
     'http': 'http://127.0.0.1:7890',
     'https': 'http://127.0.0.1:7890'
 }
+
+#钉钉配置信息
+webhook_url = "https://oapi.dingtalk.com/robot/send?access_token=ae55d8268ce1bff0c03593f292723fc8bfcacc7ad7a0adf33b23d9116957237b"
+secret = "SEC539fc1972fd714277a22f56dde3537e15f6168592212fb1c73283618e7b1c95b"
