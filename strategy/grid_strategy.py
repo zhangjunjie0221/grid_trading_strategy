@@ -33,11 +33,11 @@ class Strategy:
             order_id = self.api_client.create_order(pair, order_type, amount, price)
             if order_id:
                 self.database.store_order_id(order_id)  #存入MongoDB
-                self.logger.info(f"已创建 {'买入' if order_type == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
+                self.logger.debug(f"已创建 {'买入' if order_type == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
                 self.dingding.send_alert(f"已创建 {'买入' if order_type == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
                 return order_id
         except Exception as e:
-            self.logger.error(f"创建订单时发生错误: {e}")
+            self.logger.debug(f"创建订单时发生错误: {e}")
             return None
 
     
@@ -47,7 +47,7 @@ class Strategy:
             status = self.api_client.get_order_status(self.pairs,order_id)
             return status
         except Exception as e:
-            self.logger.error(f"检查订单状态时发生错误: {e}")
+            self.logger.debug(f"检查订单状态时发生错误: {e}")
             return {}
 
 
@@ -83,9 +83,9 @@ class Strategy:
                 try:
                     self.create_maker_order(self.pairs, asset_num, price, order_type)
                     success = True  # 如果创建成功，设置成功状态
-                    self.logger.info(f"成功创建初始化订单: 价格: {price}, 数量: {asset_num}")
+                    self.logger.debug(f"成功创建初始化订单: 价格: {price}, 数量: {asset_num}")
                 except Exception as e:
-                    self.logger.error(f"初始化创建订单失败: {e}，正在重新尝试...")
+                    self.logger.debug(f"初始化创建订单失败: {e}，正在重新尝试...")
                     time.sleep(1)  # 等待 1 秒后重新尝试
 
 
@@ -168,12 +168,12 @@ class Strategy:
                 time.sleep(1)  # 每1秒检查一次
 
         except Exception as e:
-            self.logger.error(f"逻辑交易过程中发生错误: {e}")
+            self.logger.debug(f"逻辑交易过程中发生错误: {e}")
             self.retry_count += 1  # 增加重连计数
             if self.retry_count > self.max_retries:
-                self.logger.info("达到最大重连次数，停止尝试。")
+                self.logger.debug("达到最大重连次数，停止尝试。")
             else:
-                self.logger.info("网络波动，尝试重新接入...")
+                self.logger.debug("网络波动，尝试重新接入...")
                 self.Logical_trading() 
         
         self.close()  #确保在结束时关闭连接

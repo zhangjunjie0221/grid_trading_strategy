@@ -3,8 +3,9 @@ import hmac
 import logging
 import time
 import urllib.parse
+import redis
 import requests
-from config.config import proxies
+from config.config import proxies ,REDIS_CONFIG
 from config.logger import setup_logger
 
 
@@ -14,6 +15,7 @@ class Binance():
         self.api_secret = api_secret
         self.base_url = "https://api.binance.com"  
         self.logger = setup_logger('Binance', 'BinanceAPI.log')
+        self.redis_client = redis.Redis(host=REDIS_CONFIG['host'], port=REDIS_CONFIG['port'], db=REDIS_CONFIG['db'],password=REDIS_CONFIG['password'])
 
 
     def get_signature(self, params):
@@ -26,7 +28,19 @@ class Binance():
         '''查询账户'''
         endpoint = "/api/v3/account"  
         data = self.request(endpoint)  
-        return data 
+
+        usdc_balance = 0
+        usdt_balance = 0
+        
+        for asset in data['balances']:
+            if asset['asset'] == 'USDC':
+                usdc_balance = float(asset['free'])
+            elif asset['asset'] == 'USDT':
+                usdt_balance = float(asset['free'])
+        
+        #存放到Redis
+        self.redis_client.set('usdc_balance', usdc_balance)
+        self.redis_client.set('usdt_balance', usdt_balance) 
     
 
     def create_order(self, symbol, side, quantity, price=None, order_type='LIMIT_MAKER'):
@@ -44,10 +58,10 @@ class Binance():
 
         try:
             response = self.request(endpoint, params=params, method='POST')
-            self.logger.info(f'创建订单完成, 订单号为:{response['orderId']}')
+            self.logger.debug(f'创建订单完成, 订单号为:{response['orderId']}')
             return response['orderId']  # 返回订单 ID
         except Exception as e:
-            self.logger.error(f"创建订单过程中发生错误: {e}")
+            self.logger.debug(f"创建订单过程中发生错误: {e}")
 
 
     def get_order_status(self, symbol, order_id):
@@ -78,7 +92,7 @@ class Binance():
             }
 
         except Exception as e:
-            self.logger.error(f"查询订单状态时发生错误:{e},参数: {params}")
+            self.logger.debug(f"查询订单状态时发生错误:{e},参数: {params}")
 
 
     def cancel_order(self, symbol, order_id):
@@ -91,12 +105,12 @@ class Binance():
         try:
             response = self.request(endpoint, params=params, method='DELETE')
             if 'code' in response:
-                self.logger.error(f"取消订单失败: {response['msg']}")
+                self.logger.debug(f"取消订单失败: {response['msg']}")
             else:
-                self.logger.info(f"订单{order_id}已成功取消。")
+                self.logger.debug(f"订单{order_id}已成功取消。")
                 return response
         except Exception as e:
-            self.logger.error(f"取消订单过程中发生错误: {e}")
+            self.logger.debug(f"取消订单过程中发生错误: {e}")
 
 
     def get_open_orders(self, symbol):
@@ -110,7 +124,7 @@ class Binance():
             response = self.request(endpoint, params=params)
             return response
         except Exception as e:
-            self.logger.error(f"获取未成交订单时发生错误: {e}")
+            self.logger.debug(f"获取未成交订单时发生错误: {e}")
             return []
         
 
@@ -137,5 +151,5 @@ class Binance():
 
                 return response.json()
             except requests.exceptions.RequestException as e:
-                self.logger.error(f"请求 {method} {endpoint} 时发生错误: {e}")
+                self.logger.debug(f"请求 {method} {endpoint} 时发生错误: {e}")
                 time.sleep(delay)
