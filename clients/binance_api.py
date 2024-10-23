@@ -78,14 +78,16 @@ class Binance():
             
             #提取策略类里面所需的字段
             status = response['status']
-            filled_amount = response['executedQty']
-            average_fill_price = response['price']
+            filled_amount = float(response['executedQty'])
+            orig_amount = float(response['origQty'])
+            average_fill_price = float(response['price'])
             order_type = response['side']
             remaining_amount = float(response['origQty']) - float(response['executedQty'])
             
             return {
                 'status': status, #订单完成状态
                 'filled_amount': filled_amount, #订单交易完成数量
+                'orig_amount': orig_amount ,#原始订单数量
                 'average_fill_price': average_fill_price, #订单交易价格
                 'order_type': order_type, #订单是买还是卖类型
                 'remaining_amount': remaining_amount #订单剩余交易数量
