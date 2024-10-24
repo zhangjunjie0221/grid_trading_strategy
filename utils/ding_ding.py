@@ -44,9 +44,9 @@ class DingDing:
         try:
             response = requests.post(url, headers=headers, data=json.dumps(data))
             if response.status_code == 200:
-                self.logger.info("钉钉消息发送成功")
+                self.logger.debug(f"钉钉消息发送成功,{message}")
             else:
-                self.logger.error(f"钉钉消息发送失败，状态码: {response.status_code}, 错误信息: {response.text}")
+                self.logger.debug(f"钉钉消息发送失败，状态码: {response.status_code}, 错误信息: {response.text}")
         except Exception as e:
-            self.logger.error(f"发送钉钉消息时发生错误: {e}")
+            self.logger.debug(f"发送钉钉消息时发生错误: {e}")
 

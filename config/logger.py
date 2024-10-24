@@ -8,7 +8,7 @@ def setup_logger(name, log_file):
     
     log_file_path = os.path.join('log', log_file)  # 将文件放在 log 文件夹中
     logger = logging.getLogger(name)
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     
     # 检查是否已经有handler避免重复添加
     if not logger.hasHandlers():

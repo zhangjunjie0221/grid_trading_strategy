@@ -24,8 +24,12 @@ class RiskControl:
             usdt_balance = self.redis_client.get('usdt_balance')
             usdc_balance = float(usdc_balance)
             usdt_balance = float(usdt_balance)
-            # open_orders = self.binance.get_open_orders(self.symbol)
-            # total_value_of_open_orders = sum(float(order['origQty']) * float(order['price']) for order in open_orders)
+            open_orders = self.binance.get_open_orders(self.symbol)
+            for order in open_orders:
+                if order['side']=='BUY':
+                    usdc_balance += float(order['origQty'])
+                if order['side']=='SELL':
+                    usdt_balance += float(order['origQty'])
             total_asset_value = usdc_balance + usdt_balance
             self.logger.debug(f"当前资产总值: {total_asset_value}")
             return total_asset_value
@@ -67,7 +71,7 @@ class RiskControl:
             orders = self.binance.get_open_orders(self.symbol)
             for order in orders:
                 self.binance.cancel_order(order['symbol'], order['orderId'])
-                self.database.remove_order_id(order)
+                self.database.remove_order_id(order['orderId'])
                 self.logger.debug(f"订单 {order['orderId']} 已取消。")
         except Exception as e:
             self.logger.debug(f"取消未成交订单时发生错误: {e}")

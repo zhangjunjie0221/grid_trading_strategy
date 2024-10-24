@@ -18,9 +18,7 @@ class Strategy:
         self.sell_orders = SELL_ORDERS
         self.logger = setup_logger('Strategy', 'Strategy.log')
         self.database = Database()
-        self.dingding = DingDing()
-        self.retry_count = 0  
-        self.max_retries = 3    
+        self.dingding = DingDing()    
 
     
     def close(self):
@@ -28,14 +26,14 @@ class Strategy:
         self.database.mongo_client.close()
     
 
-    def create_maker_order(self, pair, amount, price, order_type='BUY'):
+    def create_maker_order(self, pair, amount, price, order_sid='BUY',order_type ="LIMIT_MAKER",time_in_force=None):
         '''创建订单'''
         try:
-            order_id = self.api_client.create_order(pair, order_type, amount, price)
+            order_id = self.api_client.create_order(pair, order_sid, amount, price,order_type,time_in_force)
             if order_id:
                 self.database.store_order_id(order_id)  #存入MongoDB
-                self.logger.debug(f"已创建 {'买入' if order_type == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
-                self.dingding.send_alert(f"已创建 {'买入' if order_type == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
+                self.logger.debug(f"已创建 {'买入' if order_sid == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
+                self.dingding.send_alert(f"已创建 {'买入' if order_sid == 'BUY' else '卖出'} 订单，价格: {price}，数量: {amount}, 订单ID: {order_id}")
                 return order_id
         except Exception as e:
             self.logger.debug(f"创建订单时发生错误: {e}")
@@ -68,41 +66,55 @@ class Strategy:
                 bid = bids_float[0]
                 ask = asks_float[0]
 
-                yield bid, ask
+                yield bid[0], ask[0]
             else:
                 break
 
 
-    def first_create_orders(self):
+    def first_create_orders(self , bid , ask):
         '''初始化订单'''
         order_type_buy = 'BUY'
         order_type_sell = 'SELL'
 
-        for price, amount in self.buy_orders.items():
-            self.create_maker_order(self.pairs,amount,price,order_type_buy)
+        if bid < 1:
+            for price, amount in self.buy_orders.items():
+                if price > bid:
+                    self.create_maker_order(self.pairs,amount,price,order_type_buy,order_type="LIMIT" , time_in_force='GTC')
+                elif price == bid:
+                    self.create_maker_order(self.pairs,amount,price,order_type_buy)
+                elif price < bid:
+                    self.create_maker_order(self.pairs,amount,price,order_type_buy)
+        elif bid >= 1:
+            for price, amount in self.buy_orders.items():
+                self.create_maker_order(self.pairs,amount,price,order_type_buy)
 
-        for price, amount in self.sell_orders.items():
-            self.create_maker_order(self.pairs,amount,price,order_type_sell)
-
-
-
-
-
+        if ask > 1:        
+            for price, amount in self.sell_orders.items():
+                if price < ask:
+                    self.create_maker_order(self.pairs,amount,price,order_type_sell,order_type="LIMIT", time_in_force='GTC')
+                elif price == ask:
+                    self.create_maker_order(self.pairs,amount,price,order_type_sell)
+                elif price > ask:
+                    self.create_maker_order(self.pairs,amount,price,order_type_sell)
+        elif ask <= 1:
+            for price, amount in self.sell_orders.items():
+                self.create_maker_order(self.pairs,amount,price,order_type_sell)
 
     def Logical_trading(self):
         '''逻辑交易'''
         #清空消息队列
         self.redis_client.delete('b-depth')
-
         initialized_orders = False
         
-
         try:
             for bid_price, ask_price in self.get_market_prices():
                 #第一次初始化订单
                 if not initialized_orders:
-                    self.first_create_orders()
+                    self.first_create_orders(bid_price,ask_price)
                     initialized_orders = True
+
+                ids_by_sell = set([])
+                ids_by_buy = set([])
 
                 #获取遍历当前订单的信息状态
                 for order_id in self.database.get_all_order_ids():
@@ -114,138 +126,80 @@ class Strategy:
                     order_type = data['order_type'] #订单的买卖类型
                     remaining_amount = data['remaining_amount'] #订单交易剩余的数量
 
-                
-                    if bid_price <= 1 and order_type == 'SELL' and status == 'FILLED':
-                        self.create_maker_order(self.pairs,orig_amount,average_fill_price,order_type)
-                        id = self.create_maker_order(self.pairs,orig_amount,1.0000,"BUY")
-                        self.database.remove_order_id(id)
+                    if ask_price > 1 and order_type == 'SELL':
+                        if ask_price != average_fill_price and status == 'FILLED':
+                            self.dingding.send_alert(f'卖单完成 价格: {average_fill_price}，卖出数量: {filled_amount}, 订单ID: {order_id}')
+                            id = self.create_maker_order(self.pairs,orig_amount,1.0000,"BUY")
+                            ids_by_sell.add(order_id)
+                            self.database.remove_order_id(order_id)
+                            self.database.remove_order_id(id)
+                        elif ask_price == average_fill_price and status != 'PARTIALLY_FILLED':
+                            self.dingding.send_alert(f'卖单部分完成 准备cancel掉  价格: {average_fill_price}，卖出数量: {filled_amount}, 订单ID: {order_id}')
+                            id = self.create_maker_order(self.pairs,filled_amount,1.0000,"BUY")
+                            ids_by_sell.add(order_id)
+                            self.database.remove_order_id(order_id)
+                            self.database.remove_order_id(id)
+                            self.api_client.cancel_order(order_id)
+                        elif ask_price == average_fill_price and status == 'FILLED':
+                            self.dingding.send_alert(f'卖单完成 价格: {average_fill_price}，卖出数量: {filled_amount}, 订单ID: {order_id}')
+                            id = self.create_maker_order(self.pairs,orig_amount,1.0000,"BUY")
+                            ids_by_sell.add(order_id)
+                            self.database.remove_order_id(order_id)
+                            self.database.remove_order_id(id)
+
+                    if bid_price < 1 and order_type == 'BUY':
+                        if bid_price != average_fill_price and status == 'FILLED':
+                            self.dingding.send_alert(f'买单完成 价格: {average_fill_price}，买入数量: {filled_amount}, 订单ID: {order_id}')
+                            id = self.create_maker_order(self.pairs,orig_amount,1.0000,"SELL")
+                            ids_by_buy.add(order_id)
+                            self.database.remove_order_id(order_id)
+                            self.database.remove_order_id(id)
+                        elif bid_price == average_fill_price and status == 'PARTIALLY_FILLED':
+                            self.dingding.send_alert(f'买单部分完成 准备cancel掉 价格: {average_fill_price}，买入数量: {filled_amount}, 订单ID: {order_id}')
+                            id = self.create_maker_order(self.pairs,filled_amount,1.0000,"SELL")
+                            ids_by_buy.add(order_id)
+                            self.database.remove_order_id(order_id)
+                            self.database.remove_order_id(id)
+                            self.api_client.cancel_order(order_id)
+                        elif bid_price == average_fill_price and status == 'FILLED':
+                            self.dingding.send_alert(f'买单完成 价格: {average_fill_price}，买入数量: {filled_amount}, 订单ID: {order_id}')
+                            id = self.create_maker_order(self.pairs,orig_amount,1.0000,"SELL")
+                            ids_by_buy.add(order_id)
+                            self.database.remove_order_id(order_id)
+                            self.database.remove_order_id(id)
+
+
+                if ask_price == 1.0000 and ids_by_sell:
+                    for id in ids_by_sell:
+                        data = self.check_order_status(id)
+                        status = data['status'] #订单完成状态
+                        filled_amount = data['filled_amount'] #订单成交数量
+                        orig_amount = data['orig_amount'] #原始订单数量
+                        average_fill_price = data['average_fill_price'] #订单成交价格
+                        order_type = data['order_type'] #订单的买卖类型
+                        remaining_amount = data['remaining_amount'] #订单交易剩余的数量
+                        self.create_maker_order(self.pairs,orig_amount,average_fill_price,"SELL")
                         self.database.remove_order_id(order_id)
-
-                    
-                    if ask_price > 1 and order_type == 'BUY'and status == 'FILLED':
-                        self.create_maker_order(self.pairs,orig_amount,average_fill_price,order_type)
-                        id = self.create_maker_order(self.pairs,orig_amount,1.0000,"SELL")
-                        self.database.remove_order_id(id)
+                    ids_by_sell.clear()
+                
+                if bid_price == 1.0000 and ids_by_buy:
+                    for id in ids_by_buy:
+                        data = self.check_order_status(id)
+                        status = data['status'] #订单完成状态
+                        filled_amount = data['filled_amount'] #订单成交数量
+                        orig_amount = data['orig_amount'] #原始订单数量
+                        average_fill_price = data['average_fill_price'] #订单成交价格
+                        order_type = data['order_type'] #订单的买卖类型
+                        remaining_amount = data['remaining_amount'] #订单交易剩余的数量
+                        self.create_maker_order(self.pairs,orig_amount,average_fill_price,"BUY")
                         self.database.remove_order_id(order_id)
-
-
-                        
-                    
-
-
-
-
-                #     if order_type == 'BUY':
-                #         buy_amount += filled_amount
-                #         for price , amount in buy_orders.items():
-                #             if average_fill_price == price:
-                #                 buy_orders[price] += remaining_amount
-                    
-                #     if order_type == 'SELL':
-                #         sell_amount += filled_amount
-                #         for price , amount in sell_orders.items():
-                #             if average_fill_price == price:
-                #                 buy_orders[price] += remaining_amount
-                
-                # for price , amount in self.buy_orders.items():
-                #     collection = []
-                #     if price in buy_orders:
-                #         #获取当前的数量
-                #         current_amount = buy_orders[price]
-                #         #获取初始的数量
-                #         available_amount = self.buy_orders[price]
-
-                #         if current_amount > available_amount:
-                #             buy_orders[price] = self.buy_orders[price]
-                #             for price_second , amount_second in buy_orders.items():
-                #                 if price_second < price :
-                #                     collection.append(price)
-                #             for price_third in sorted(collection):
-                #                 if (buy_orders[price_third] + (current_amount - self.buy_orders[price])) >= self.buy_orders[price_third]:
-                #                     buy_orders[price_third] = self.buy_orders[price_third]
-                                
-                #         elif current_amount < available_amount:
-                #             buy_orders[price] = current_amount
-
-                #         elif current_amount == available_amount:
-                #             buy_orders[price] = self.buy_orders[price]
-                
-
-                        
-
-
-
-                # if buy_amount != sell_amount: 
-                #     different = abs(buy_amount-sell_amount)
-                #     if (buy_amount-sell_amount) < 0 :
-                #         pass
-                
-                
-
-
-
-                #     if status == 'FILLED' and order_type == 'BUY':
-                #         print(f"买入订单 {order_id} 已完成")
-                #         #再提升价格卖单
-                #         take_profit_price = average_fill_price + self.step
-                #         sell_amount = int(filled_amount)
-                #         self.create_maker_order(self.pairs, sell_amount, take_profit_price, order_type='SELL')
-                #         self.database.remove_order_id(order_id)
-
-                #     elif status == 'PARTIALLY_FILLED' and order_type == 'BUY':
-                #         print(f"买入订单 {order_id} 部分成交，已成交: {filled_amount}，剩余: {remaining_amount}")
-
-                #     elif status == 'FILLED' and order_type == 'SELL':
-                #         print(f"卖出订单{order_id}已完成")
-                #         buy_price = 0
-                #         buy_amount = 0
-                #         boolean = True #新增限制条件 用于后面判定网格区间是否还存在订单 防止在一个区间重复下单
-
-                #         #判断如果当前的市场价的买入价格 小于 之前的买入订单的价格 则选择下 价格为当前市场价格的买入单和对应的数量 
-                #         if bid_price < average_fill_price - self.step :
-
-                #             #判断马上要下买单的价格区间 是否存在 在现有未完全成交的买单中 防止在一个区间重复下单
-                #             for order_id in self.orders_id: 
-                #                 if self.check_order_status(order_id)['order_type'] == 'BUY' and self.check_order_status(order_id)['status'] == 'PARTIALLY_FILLED' :
-                #                     fill_price = self.check_order_status(order_id)['average_fill_price']
-                #                     if bid_price == fill_price:
-                #                         #如果有则把变量boolean改为false
-                #                         boolean = False
-                #                         break
-                #             #如果boolean值是true则可以进行下一步赋值 否则跳过下面赋值步骤
-                #             if boolean:
-                #                 #判断要下单的价格是否在我们规定的网格内 如果在则可以赋值 
-                #                 for price, quantity in self.orders.items():
-                #                     if price == bid_price:
-                #                         buy_price = bid_price
-                #                         buy_amount = int(round(quantity / price, 5))
-
-                #         #如果当前的市场价的买入价格 大于等于 之前的买入订单的价格 则选择下 价格为之前的买入订单的价格和对应的数量 
-                #         buy_price = average_fill_price - self.step
-                #         #判断要下单的价格是否在我们规定的网格内 如果在则可以赋值 
-                #         for price, quantity in self.orders.items():
-                #             if price == (average_fill_price - self.step):
-                #                 buy_amount = int(round(quantity / price, 5))
-                        
-                #         self.create_maker_order(self.pairs , buy_amount, buy_price , order_type='BUY')
-                #         self.database.remove_order_id(order_id)
-
-                #     elif status == 'PARTIALLY_FILLED' and order_type == 'SELL':
-                #         print(f"卖出订单{order_id}部分成交，已成交:{filled_amount}，剩余:{remaining_amount} ,继续等待买单完成")
-
-                #     elif status == 'CANCELED':
-                #         self.database.remove_order_id(order_id)
+                    ids_by_buy.clear()
             
-                # time.sleep(1)  # 每1秒检查一次
+                time.sleep(1)  # 每1秒检查一次
 
         except Exception as e:
-            self.logger.debug(f"逻辑交易过程中发生错误: {e}")
-            self.retry_count += 1  # 增加重连计数
-            if self.retry_count > self.max_retries:
-                self.logger.debug("达到最大重连次数，停止尝试。")
-            else:
-                self.logger.debug("网络波动，尝试重新接入...")
-                self.Logical_trading() 
+            self.logger.debug(f"逻辑交易过程中发生错误: {e}") 
+            self.dingding.send_alert(f"出现未知错误 ，请处理：{e}")
         
         self.close()  #确保在结束时关闭连接
 

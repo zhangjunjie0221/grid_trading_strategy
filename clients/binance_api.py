@@ -7,6 +7,7 @@ import redis
 import requests
 from config.config import proxies ,REDIS_CONFIG
 from config.logger import setup_logger
+from utils.ding_ding import DingDing
 
 
 class Binance():
@@ -16,6 +17,7 @@ class Binance():
         self.base_url = "https://api.binance.com"  
         self.logger = setup_logger('Binance', 'BinanceAPI.log')
         self.redis_client = redis.Redis(host=REDIS_CONFIG['host'], port=REDIS_CONFIG['port'], db=REDIS_CONFIG['db'],password=REDIS_CONFIG['password'])
+        self.dingding = DingDing() 
 
 
     def get_signature(self, params):
@@ -43,7 +45,7 @@ class Binance():
         self.redis_client.set('usdt_balance', usdt_balance) 
     
 
-    def create_order(self, symbol, side, quantity, price=None, order_type='LIMIT_MAKER'):
+    def create_order(self, symbol, side, quantity, price=None, order_type='LIMIT_MAKER',timeInForce =None):
         '''创建maker订单'''
         endpoint = "/api/v3/order"  
         params = {
@@ -55,13 +57,24 @@ class Binance():
 
         if price is not None:
             params['price'] = price #限价单时
+        if timeInForce is not None:
+            params['timeInForce'] = timeInForce
 
         try:
             response = self.request(endpoint, params=params, method='POST')
+            self.logger.debug(response)
             self.logger.debug(f'创建订单完成, 订单号为:{response['orderId']}')
             return response['orderId']  # 返回订单 ID
         except Exception as e:
-            self.logger.debug(f"创建订单过程中发生错误: {e}")
+            if response['code'] == -2010:
+                self.logger.debug(response)
+                self.logger.debug("订单会立即成交，请调整价格。")
+            elif response['code'] == -1013:
+                self.logger.debug(response)
+                self.logger.debug("订单金额低于最小要求，请调整数量或价格")
+            else :
+                self.logger.debug(response)
+                self.dingding.send_alert(f"出现未知错误 ，请处理：{response}")
 
 
     def get_order_status(self, symbol, order_id):
@@ -94,7 +107,9 @@ class Binance():
             }
 
         except Exception as e:
+            self.logger.debug(response)
             self.logger.debug(f"查询订单状态时发生错误:{e},参数: {params}")
+            self.dingding.send_alert(f"出现未知错误 ，请处理：{response}")
 
 
     def cancel_order(self, symbol, order_id):
@@ -112,7 +127,9 @@ class Binance():
                 self.logger.debug(f"订单{order_id}已成功取消。")
                 return response
         except Exception as e:
+            self.logger.debug(response)
             self.logger.debug(f"取消订单过程中发生错误: {e}")
+            self.dingding.send_alert(f"出现未知错误 ，请处理：{response}")
 
 
     def get_open_orders(self, symbol):
@@ -126,11 +143,12 @@ class Binance():
             response = self.request(endpoint, params=params)
             return response
         except Exception as e:
+            self.logger.debug(response)
             self.logger.debug(f"获取未成交订单时发生错误: {e}")
             return []
         
 
-    def request(self, endpoint, params=None, method='GET', retries=3, delay=1):
+    def request(self, endpoint, params=None, method='GET'):
         '''发送请求'''
         if params is None:
             params = {}  #如果没有传入参数则初始化为空字典
@@ -141,17 +159,17 @@ class Binance():
             'X-MBX-APIKEY': self.api_key  
         }
         
-        #添加重试机制
-        for attempt in range(retries):
-            try:
-                if method == 'POST':
-                    response = requests.post(f"{self.base_url}{endpoint}", headers=headers, params=params , proxies=proxies)  
-                elif method == 'GET': 
-                    response = requests.get(f"{self.base_url}{endpoint}", headers=headers, params=params, proxies=proxies)
-                elif method == 'DELETE':  
-                    response = requests.delete(f"{self.base_url}{endpoint}", headers=headers, params=params, proxies=proxies)
+        try:
+            if method == 'POST':
+                response = requests.post(f"{self.base_url}{endpoint}", headers=headers, params=params , proxies=proxies)  
+            elif method == 'GET': 
+                response = requests.get(f"{self.base_url}{endpoint}", headers=headers, params=params, proxies=proxies)
+            elif method == 'DELETE':  
+                response = requests.delete(f"{self.base_url}{endpoint}", headers=headers, params=params, proxies=proxies)
 
-                return response.json()
-            except requests.exceptions.RequestException as e:
-                self.logger.debug(f"请求 {method} {endpoint} 时发生错误: {e}")
-                time.sleep(delay)
+            return response.json()
+        except requests.exceptions.RequestException as e:
+            self.logger.debug(response)
+            self.logger.debug(f"请求 {method} {endpoint} 时发生错误: {e}")
+            self.dingding.send_alert(f"出现未知错误 ，请处理：{response}")
+
