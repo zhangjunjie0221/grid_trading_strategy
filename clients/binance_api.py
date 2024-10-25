@@ -74,6 +74,7 @@ class Binance():
                 self.logger.debug("订单金额低于最小要求，请调整数量或价格")
             else :
                 self.logger.debug(response)
+                self.logger.debug("创建订单的时候发生错误")
                 self.dingding.send_alert(f"出现未知错误 ，请处理：{response}")
 
 
@@ -144,6 +145,7 @@ class Binance():
             return response
         except Exception as e:
             self.logger.debug(response)
+            self.logger.debug("获取未成交订单的时候发生错误")
             self.logger.debug(f"获取未成交订单时发生错误: {e}")
             return []
         

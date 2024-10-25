@@ -59,7 +59,6 @@ class MarketData():
                             }
                             # 通过Redis发布市场深度数据
                             self.redis.rpush('b-depth', pickle.dumps(newdata))
-                            print(newdata)
                             self.lasttime[self.instrument.upper()] = time.time()
 
                     # 每60秒记录一次数据

@@ -37,7 +37,8 @@ class Strategy:
                 return order_id
         except Exception as e:
             self.logger.debug(f"创建订单时发生错误: {e}")
-            return None
+            self.dingding.send_alert(f"出现未知错误 ，请处理：{e}")
+
 
     
     def check_order_status(self, order_id):
@@ -47,7 +48,8 @@ class Strategy:
             return status
         except Exception as e:
             self.logger.debug(f"检查订单状态时发生错误: {e}")
-            return {}
+            self.dingding.send_alert(f"出现未知错误 ，请处理：{e}")
+
 
 
     def get_market_prices(self):
